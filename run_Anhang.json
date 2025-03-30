@@ -1,0 +1,1324 @@
+{
+  "Organisatorische Maßnahmen": [
+    {
+      "Anforderungsnummer": 2,
+      "Name": "Strategische Vorgaben zur Informationssicherheit und Verantwortung der Unternehmensleitung",
+      "Beschreibung": "Eine Informationssicherheitsleitlinie mit Sicherheitszielen und strategischen Vorgaben, wie diese Ziele erreicht werden sollen, ist dokumentiert. Die Sicherheitsziele leiten sich von den Unternehmenszielen und Geschäftsprozessen, relevanten Gesetzen und Verordnungen sowie der aktuellen und zukünftig erwarteten Bedrohungsumgebung in Bezug auf Informationssicherheit ab. Die strategischen Vorgaben stellen grundlegende Rahmenbedingungen dar, die in weiteren Richtlinien und Anweisungen näher spezifiziert werden. Die Informationssicherheitsleitlinie wird von der Unternehmensleitung verabschiedet und an alle betroffenen internen und externen Parteien der kritischen Dienstleistung kommuniziert.",
+      "Verweis": "OIS-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 3.1,
+      "Name": "Zuständigkeiten und Verantwortungen im Rahmen der Informationssicherheit",
+      "Beschreibung": "Die Verantwortlichkeiten, Pflichten sowie die Schnittstellen zum Melden von Sicherheitsvorfällen und Störungen sind definiert, dokumentiert, zugewiesen und an alle betroffenen internen und externen Parteien (z. B. Auftragnehmer des KRITIS-Betreibers der kritischen Dienstleistung) kommuniziert. Seitens des KRITIS-Betreibers sind mindestens die folgenden Rollen (oder vergleichbare Äquivalente) in der Informationssicherheitsleitlinie oder zugehörigen Richtlinien beschrieben und entsprechende Verantwortlichkeiten zugewiesen: e [T-Leiter (CIO) e [T-Sicherheitsbeauftragter (CISO) e Beauftragter für die Behandlung von IT-Sicherheitsvorfällen (z. B. CERT-Leiter). Veränderungen an Verantwortlichkeiten und Schnittstellen werden intern und extern so zeitnah kommuniziert, dass alle mit organisatorischen und technischen Maßnahmen betroffenen internen und externen Parteien angemessen darauf reagieren können, bevor die Änderungen wirksam werden.",
+      "Verweis": "OIS-03",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 3.2,
+      "Name": "Zuständigkeiten und Verantwortungen im Rahmen der Informationssicherheit",
+      "Beschreibung": "Der KRITIS-Betreiber identifiziert sämtliche Risiken im Zusammenhang mit überlappenden oder inkompatiblen Zuständigkeiten und Verantwortungen.",
+      "Verweis": "OIS-03",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 4,
+      "Name": "Funktionstrennung",
+      "Beschreibung": "Es existieren angemessene Vorgaben und Anweisungen zu organisatorischen und technischen Kontrollen, um die Trennung von Rollen und Verantwortlichkeiten (Separation of Duties/Funktionstrennung), die hinsichtlich der Vertraulichkeit, Integrität und Verfügbarkeit der Informationen im Zusammenhang mit der kritischen Dienstleistung nicht miteinander vereinbar sind, zu gewährleisten (z. B. in Stellenbeschreibungen, Prozessbeschreibungen, SOD-Matrizen, etc.). Die Vorgaben adressieren insbesondere die folgenden Bereiche (Beispiele): e Administration von Rollen, Genehmigung und Zuweisung von Zugriffsberechtigungen für Benutzer unter Verantwortung des KRITIS-Betreibers e die Entwicklung und Implementierung von Änderungen an der kritischen Dienstleistung sowie die Wartung der für die kritische Dienstleistung relevanten physischen und logischen IT-Infrastruktur (Netzwerke, Betriebssysteme, Datenbanken) und der IT-Anwendungen e den Betrieb und die Überwachung des Betriebs der kritischen Dienstleistungen. Operative und kontrollierende Funktionen sollten nicht von einer Person gleichzeitig wahrgenommen werden dürfen. Kann aus organisatorischen oder technischen Gründen keine Funktionstrennung erreicht werden, sind angemessene kompensierende Kontrollen eingerichtet, um missbräuchliche Aktivitäten zu verhindern oder aufzudecken. Vorhandene Funktionstrennungskonflikte und die dazu eingerichteten kompensierenden Kontrollen nachvollziehbar dokumentiert (z. B. in einem Rollen- und Rechtekonzept), um eine Beurteilung über die Angemessenheit und Wirksamkeit dieser Kontrollen zu ermöglichen.",
+      "Verweis": "OIS-04",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 5,
+      "Name": "Asset Inventar",
+      "Beschreibung": "Die zur Erbringung der kritischen Dienstleistung eingesetzten IT-Systeme und Komponenten (Assets) wie z. B. PCs, Peripheriegeräte, Telefone, Netzwerkkomponenten, Server, Installationsdokumentationen, Verfahrensanweisungen, IT-Anwendungen u. Werkzeuge sind identifiziert und inventarisiert. Durch angemessene Vorkehrungen und Maßnahmen wird sichergestellt, dass dieses Inventar vollständig, richtig, aktuell und konsistent bleibt. Änderungen an den Einträgen im Inventar werden nachvollziehbar historisiert. Soweit hierzu keine wirksamen Automatismen eingerichtet sind, wird dies durch regelmäßig stattfindende manuelle Überprüfung der Inventardaten des Assets sichergestellt.",
+      "Verweis": "AM-01",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 6,
+      "Name": "Zuweisung von Asset Verantwortlichkeiten",
+      "Beschreibung": "Alle inventarisierten Assets mit Relevanz für die Erbringung der kritischen Dienstleistung sind einem Verantwortlichen auf Seiten des Betreibers der kritischen Dienstleistung zugewiesen. Die Verantwortlichen des Betreibers sind über den kompletten Lebenszyklus der Assets dafür zuständig, dass diese vollständig inventarisiert und richtig klassifiziert sind.",
+      "Verweis": "AM-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 7,
+      "Name": "Nutzungsanweisungen für Assets",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen für den ordnungsgemäßen Umgang mit Assets, die für die Erbringung der kritischen Dienstleistung relevant sind und gemäß der Informationssicherheitsrichtlinie dokumentiert, kommuniziert und in der jeweils aktuellsten Version bereitgestellt werden.",
+      "Verweis": "AM-03",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 8,
+      "Name": "Ab- und Rückgabe von Assets",
+      "Beschreibung": "Alle internen und externen Mitarbeiter des Betreibers der kritischen Dienstleistung sind verpflichtet, sämtlich Assets, die ihnen in Bezug auf die kritische Dienstleistung übergeben wurden bzw. für die sie verantwortlich sind, zurückzugeben oder unwiderruflich zu löschen, sobald das Beschäftigungsverhältnis beendet ist.",
+      "Verweis": "AM-04",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 9,
+      "Name": "Klassifikation von Informationen",
+      "Beschreibung": "Der Betreiber der kritischen Dienstleistung verwendet eine einheitliche Klassifizierung von Informationen und Assets, die für die Entwicklung und Erbringung der kritischen Dienstleistung relevant sind. Das Klassifizierungsschema basiert auf einer Risikoanalyse und Folgeabschätzung (4.4.3).",
+      "Verweis": "AM-05",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 10,
+      "Name": "Kennzeichnung von Informationen und Handhabung von Assets",
+      "Beschreibung": "Zu dem umgesetzten Klassifizierungsschema von Informationen und Assets existieren Arbeitsanweisungen und Prozesse, um die Kennzeichnung von Informationen sowie die entsprechende Behandlung von Assets zu gewährleisten.",
+      "Verweis": "AM-06",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 11,
+      "Name": "Verwaltung von Datenträgern",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen für den sicheren Umgang mit Assets sind gemäß der IT-Sicherheitsrichtlinie dokumentiert, kommuniziert und bereitgestellt. Die Vorgaben stellen einen Bezug zur Klassifikation von Informationen her. Sie umfassen die sichere Verwendung, den sicheren Transport sowie die unwiederbringliche Löschung und Vernichtung von Datenträgern.",
+      "Verweis": "AM-07",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 12,
+      "Name": "Überführung und Entfernung von Assets",
+      "Beschreibung": "Geräte, Hardware, Software oder Daten dürfen nur nach erfolgter Genehmigung durch autorisierte Gremien oder Stellen des Betreibers der kritischen Infrastruktur überführt werden. Die Überführung findet auf sicherem Wege statt, entsprechend der Art des zu überführenden Assets.",
+      "Verweis": "AM-08",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 13,
+      "Name": "Richtlinie für die Organisation des Risikomanagements",
+      "Beschreibung": "Richtlinien und Anweisungen über das grundsätzliche Verfahren zur Identifikation, Analyse, Beurteilung und Behandlung von Risiken und insbesondere IT-Risiken, die zu Störungen der Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit der für die Erbringung der kritischen Dienstleistung notwendigen informationstechnischen Systeme führen, sind dokumentiert, kommuniziert und bereitgestellt.",
+      "Verweis": "OIS-06",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 14.1,
+      "Name": "Identifikation, Analyse, Beurteilung und Folgeabschätzung von IT-Risiken",
+      "Beschreibung": "Die Verfahren zur Identifikation, Analyse, Beurteilung und Behandlung von Risiken, einschließlich der für die Erbringung der kritischen Dienstleistung relevanten IT-Risiken, werden mindestens jährlich durchlaufen, um interne und externe Veränderungen und Einflussfaktoren zu berücksichtigen. Die identifizierten Risiken werden gemäß den Maßnahmen des Risikomanagements nachvollziehbar dokumentiert, bewertet und mit mitigierenden Maßnahmen versehen.",
+      "Verweis": "OIS-07",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 14.2,
+      "Name": "Identifikation, Analyse, Beurteilung und Folgeabschätzung von IT-Risiken",
+      "Beschreibung": "Vorgaben der Unternehmensleitung für den Risikoappetit und die Risikotoleranzen sind in der Richtlinie für das Risikomanagement oder einem vergleichbar verbindlichen Dokument enthalten. Dies schließt Folgeabschätzungen der Risiken für die Nutzer der kritischen Dienstleistung ein. Die Unternehmensleitung wird mindestens quartalsweise und in angemessener Form über den Status der identifizierten Risiken und mitigierender Vorkehrungen und Maßnahmen informiert.",
+      "Verweis": "OIS-07",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 15,
+      "Name": "Richtlinien zur Folgeabschätzung",
+      "Beschreibung": "Richtlinien und Anweisungen zum Ermitteln von Auswirkungen etwaiger Störungen der kritischen Dienstleistung sind dokumentiert, kommuniziert und bereitgestellt. Mindestens die folgenden Aspekte werden dabei berücksichtigt: e Analysen in Bezug auf Komponenten, deren Ausfall den Ausfall der gesamten Anlage auslösen kann ('Single Point of Failure') e Berücksichtigung einer Änderung der allgemeinen und branchenspezifischen Gefährdungslage e Mögliche Szenarien basierend auf einer Risikoanalyse (z. B. Ausfall von Personal, Gebäude, Infrastruktur und Dienstleister) e Identifizierung von Richtlinien und Anweisungen zu notwendigen Produkten und Dienstleistungen e Identifizierung von Abhängigkeiten, einschließlich der Prozesse (inkl. dafür benötigter Ressourcen), Anwendungen, Geschäftspartner und Dritter e Erfassung von Bedrohungen gegenüber der kritischen Dienstleistung e Ermittlung von Auswirkungen resultierend aus geplanten und ungeplanten Störungen und den Veränderungen im Laufe der Zeit auf die kritische Dienstleistung e Feststellung der maximal vertretbaren Dauer von Störungen, bevor die Mindestqualität der kritischen Dienstleistung erreicht ist e Feststellung der Prioritäten zur Wiederherstellung e Feststellung zeitlicher Zielvorgaben zur Wiederaufnahme der kritischen Dienstleistung innerhalb des maximal vertretbaren Zeitraums (RTO) e Feststellung zeitlicher Vorgaben zum maximal vertretbaren Zeitraum, in dem Daten verloren und nicht wiederhergestellt werden können (RPO) e Abschätzung der zur Wiederaufnahme benötigten Ressourcen.",
+      "Verweis": "BCM-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 16,
+      "Name": "Maßnahmenableitung",
+      "Beschreibung": "Es sind Richtlinien definiert, die die Ableitung von Maßnahmen und deren Überwachung regeln. Dies beinhaltet, dass die identifizierten IT-Risiken im Zusammenhang mit der kritischen Dienstleistung gemäß den Vorgaben des Risikomanagements nachvollziehbar mit Maßnahmen versehen werden, um die IT-Risiken zu reduzieren. Dabei ist zu berücksichtigen, dass gegenüber allgemeinen Risiko-Managementansätzen ein unbehandeltes Risiko durch eigenständige dauerhafte Risikoakzeptanz durch den Betreiber oder Versicherung gegen Risiken in der Regel keine zulässige Option im Sinne des BSIG ist. Der Status der Maßnahmenumsetzung und der damit einhergehenden Veränderung der Risikobewertung wird überwacht und regelmäßig an die relevanten Stakeholder berichtet. Auch bei Outsourcing o. Ä. verbleibt die volle Verantwortung für eine geeignete Risikobehandlung beim Betreiber.",
+      "Verweis": "B3S",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 83.1,
+      "Name": "Anlassbezogene Prüfungen — Konzept",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen sind gemäß Informationssicherheitsrichtlinie dokumentiert, kommuniziert und bereitgestellt, um das zeitnahe Identifizieren und Adressieren von Schwachstellen aller KRITIS-relevanten IT-Systeme, die unter Verantwortung des KRITIS-Betreibers stehen, zu gewährleisten. ",
+      "Verweis": "RB-17",
+      "Umsetzungsgrad": "UG2"
+    },
+	{
+      "Anforderungsnummer": 83.2,
+      "Name": "Anlassbezogene Prüfungen — Konzept",
+      "Beschreibung": "Die Maßnahmen umfassen unter anderem: e Regelmäßiges Identifizieren und Analysieren von Schwachstellen (Vulnerabilities) e Regelmäßiges Nachhalten von Maßnahmen zum Adressieren identifizierter Maßnahmen (z. B. Einspielen von Sicherheitsaktualisierungen gemäß interner Zielvorgaben).",
+      "Verweis": "RB-17",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 85,
+      "Name": "Informieren der Unternehmensleitung",
+      "Beschreibung": "Die Unternehmensleitung wird durch regelmäßige Berichte über den Stand der Informationssicherheit auf Grundlage der Sicherheitsprüfungen informiert und ist verantwortlich für die zeitnahe Behebung von daraus hervorgegangenen Feststellungen.",
+      "Verweis": "SPN-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 86.1,
+      "Name": "Interne Überprüfung der Compliance von IT-Prozessen",
+      "Beschreibung": "Qualifiziertes Personal (z. B. Interne Revision) oder durch den Betreiber mit internen Informationssicherheitsrichtlinien und Standards beauftragte sachverständige Dritte überprüfen jährlich die Compliance der internen IT-Prozesse mit den entsprechenden internen Richtlinien und Standards sowie der für den Betrieb der kritischen Dienstleistung rechtlichen, regulativen und gesetzlich vorgeschriebenen Anforderungen. ",
+      "Verweis": "SPN-02",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 86.2,
+      "Name": "Interne Überprüfung der Compliance von IT-Prozessen",
+      "Beschreibung": "Die identifizierten Abweichungen werden priorisiert und in Abhängigkeit ihrer Kritikalität werden Maßnahmen zur Behebung zeitnah definiert, nachverfolgt und umgesetzt. Die Prüfung wird regelmäßig durchgeführt. Die Prüfung umfasst auch die Einhaltung der Anforderungen dieses Anforderungskatalogs.",
+      "Verweis": "SPN-02",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 87.1,
+      "Name": "Prüfungen in anderen, anderweitig vorgegebenen oder durch den KRITIS-Betreiber beauftragte Prüfzyklen - interne IT-Prüfungen",
+      "Beschreibung": "Qualifiziertes Personal (z. B. Interne Revision) des KRITIS-Betreibers prüfen mindestens jährlich die Compliance der IT-Systeme, soweit diese ganz oder teilweise im Verantwortungsbereich des KRITIS-Betreibers liegen und für die Entwicklung oder den Betrieb der kritischen Dienstleistung relevant sind, mit den entsprechenden internen Richtlinien und Standards sowie der für die kritischen Dienstleistungen relevanten rechtlichen, regulativen und gesetzlich vorgeschriebenen Anforderungen.",
+      "Verweis": "SPN-03",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 87.2,
+      "Name": "Prüfungen in anderen, anderweitig vorgegebenen oder durch den KRITIS-Betreiber beauftragte Prüfzyklen - interne IT-Prüfungen",
+      "Beschreibung": "Die identifizierten Abweichungen werden priorisiert und in Abhängigkeit ihrer Kritikalität werden Maßnahmen zur Behebung zeitnah definiert, nachverfolgt und umgesetzt.",
+      "Verweis": "SPN-03",
+      "Umsetzungsgrad": "UG5"
+    },
+	{
+      "Anforderungsnummer": 87.3,
+      "Name": "Prüfungen in anderen, anderweitig vorgegebenen oder durch den KRITIS-Betreiber beauftragte Prüfzyklen - interne IT-Prüfungen",
+      "Beschreibung": "Der KRITIS-Betreiber verpflichtet seine Unterauftragnehmer zu solchen Prüfungen und lässt sich die Prüfberichte im gleichen Turnus vorlegen und verwertet sie bei seinen Überprüfungen.",
+      "Verweis": "SPN-03",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 88,
+      "Name": "Prüfungen in anderen, anderweitig vorgegebenen Prüfzyklen - Planung externer Audits",
+      "Beschreibung": "Unabhängige Überprüfungen und Beurteilungen von Systemen oder Kom-ponenten, die zur Erbringung der kritischen Dienstleistung beitragen, sind vom KRITIS-Betreiber so geplant, dass die folgenden Anforderungen erfüllt werden:• Es erfolgt ausschließlich lesender Zugriff auf die kritische Dienstleistung und Daten. • Aktivitäten, die möglicherweise die Verfügbarkeit der IT oder Kompo-nenten beeinträchtigen und so zu Beeinträchtigungen der Verfügbarkeit der kritischen Dienstleistung führen könnten, werden außerhalb der re-gulären Geschäftszeiten bzw. nicht zu Zeiten von Lastspitzen durchge-führt. • Die durchgeführten Aktivitäten werden protokolliert und überwacht. Der KRITIS-Betreiber hat Vorkehrungen für außerplanmäßige Audits getroffen.",
+      "Verweis": "COM-02",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 89.1,
+      "Name": "Prüfungen in anderen, anderweitig vorgegebenen Prüfzyklen - Planung externer Audits",
+      "Beschreibung": "Prüfungen und Beurteilungen von Prozessen, IT-Systemen und IT-Komponenten, soweit diese ganz oder teilweise im Verantwortungsbereich des KRITIS-Betreibers liegen und für den Betrieb der kritischen Dienstleistung relevant sind, werden mindestens jährlich durch unabhängige Dritte (z. B. Wirtschaftsprüfer) durchgeführt, um Nichtkonformitäten mit rechtlichen, regulativen und gesetzlich vorgeschriebenen Anforderungen zu identifizieren. ",
+      "Verweis": "SOM-03",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 89.2,
+      "Name": "Prüfungen in anderen, anderweitig vorgegebenen Prüfzyklen - Planung externer Audits",
+      "Beschreibung": "Die identifizierten Abweichungen werden priorisiert und in Abhängigkeit ihrer Kritikalität werden Maßnahmen zur Behebung zeitnah definiert, nachverfolgt und umgesetzt. Falls notwendig, können außerplanmäßige Überprüfungen durch unabhängige Dritte durchgeführt werden.",
+      "Verweis": "SOM-03",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 97.1,
+      "Name": "Kontakt zu relevanten Behörden und Interessenverbänden",
+      "Beschreibung": "Angemessene und für den Anbieter der kritischen Dienstleistung relevante Kontakte zu Behörden und Interessenverbänden sind etabliert, um den stets über aktuelle Bedrohungslagen und Gegenmaßnahmen informiert zu sein und zeitnah und angemessen darauf zu reagieren. ",
+      "Verweis": "OIS-05",
+      "Umsetzungsgrad": "UG2"
+    },
+	{
+      "Anforderungsnummer": 97.2,
+      "Name": "Kontakt zu relevanten Behörden und Interessenverbänden",
+      "Beschreibung": "Es sind Verfahren definiert und dokumentiert, um die erhaltenen Informationen an die internen und externen Mitarbeiter des Anbieters der kritischen Dienstleistung zu kommunizieren und zeitnah und angemessen darauf zu reagieren.",
+      "Verweis": "OIS-05",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 98,
+      "Name": "Richtlinie zum Umgang mit und Sicherheitsanforderungen an Dienstleister des KRITIS-Betreibers",
+      "Beschreibung": "Richtlinien und Anweisungen zur Sicherstellung des Schutzes von Informationen (insb. deren Verfügbarkeit) auf sonstige Dritte (z.B. Dienstleister bzw. Lieferanten des KRITIS-Betreibers), die wesentliche Teile für den Betrieb der kritischen Dienstleistung beitragen, sind gemäß IT-Informationssicherheitsrichtlinie dokumentiert, kommuniziert und bereitgestellt. Die Vorgaben dienen der Reduzierung von Risiken, die durch die Auslagerung von IT-Systemen entstehen können. Dabei werden mindestens die folgenden Aspekte berücksichtigt: e Definition und Beschreibung von Mindest-Sicherheitsanforderungen in Bezug auf die verarbeiteten Informationen, die sich an etablierten Informationssicherheitsstandards orientieren e Anforderungen an das Incident- und Vulnerability-Management (insb. Benachrichtigungen und Kollaborationen während einer Störungsbehebung) e Weitergabe und vertragliche Verpflichtung auf die Mindest-Sicherheitsanforderungen auch an Unterauftragnehmer, wenn diese nicht nur unwesentliche Teile zu Entwicklung oder Betrieb der kritischen Dienstleistung (z.B. RZ-Dienstleister) beitragen e die Definition der Anforderungen ist in das Risikomanagement des KRITIS-Betreibers eingebunden. Diese müssen regelmäßig auf ihre Angemessenheit hin überprüft werden.",
+      "Verweis": "DLL-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 99.1,
+      "Name": "Kontrolle der Leistungserbringung und der Sicherheitsanforderungen an Dienstleister und Lieferanten des KRITIS-Betreibers",
+      "Beschreibung": "Verfahren zur regelmäßigen Überwachung und Überprüfung der vereinbarten Leistungen und Sicherheitsanforderungen von Dritten (z. B. Dienstleister bzw. Lieferanten des KRITIS-Betreibers), die wesentliche Teile für den Betrieb der kritischen Dienstleistung beitragen, sind implementiert. Die Maßnahmen umfassen mindestens: e Regelmäßige Kontrolle von Dienstleistungsberichten (z. B. SLA-Reportings, Prüfungsberichten nach IDW PS 915 oder ISAE 3000), soweit diese von Dritten erbracht werden e Überprüfung von sicherheitsrelevanten Vorfällen, Betriebsstörungen oder Ausfällen und Unterbrechungen, die mit der Dienstleistung zusammenhängen e außerplanmäßige Überprüfungen nach wesentlichen Änderungen der Anforderungen oder des Umfelds. Die Notwendigkeit für außerplanmäßige Überprüfungen ist durch den KRITIS-Betreiber zu beurteilen und nachvollziehbar zu dokumentieren. ",
+      "Verweis": "DLL-02",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 99.2,
+      "Name": "Kontrolle der Leistungserbringung und der Sicherheitsanforderungen an Dienstleister und Lieferanten des KRITIS-Betreibers",
+      "Beschreibung": "Festgestellte Abweichungen werden gemäß der Anforderung OIS-07 (vgl. Nr. 14) einer Risikoanalyse unterzogen, um diese zeitgerecht durch mitigierende Maßnahmen wirksam zu adressieren.",
+      "Verweis": "DLL-02",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 100,
+      "Name": "Einrichtung einer Kontaktstelle",
+      "Beschreibung": "Der Betreiber hat die Aufgaben und Zuständigkeiten für die Entgegennahme der Vorfallmeldungen, deren Beurteilung sowie Weiterleitung an das BSI geregelt. Hierzu hat er eine Kontaktstelle gemäß §8b Absatz 3 BSIG eingerichtet.",
+      "Verweis": "",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 65,
+      "Name": "Festlegung notwendiger Kompetenzen (Betrieb und IT-Sicherheit)",
+      "Beschreibung": "Von der Sicherheitsleitlinie abgeleitete Richtlinien und Anweisungen zur Informationssicherheit oder verwandter Themen sind nach einer einheitlichen Struktur dokumentiert. Sie werden sach- und bedarfsgerecht an alle relevanten Stakeholder kommuniziert und bereitgestellt. Sicherheitsleitlinien werden versioniert und von der Unternehmensleitung freigegeben. Die Richtlinien und Anweisungen beschreiben mindestens die folgenden Aspekte: e Ziele e Geltungsbereiche e Rollen und Verantwortlichkeiten einschließlich Anforderungen an die Qualifikation des Personals und das Einrichten von Vertretungsregelungen e die Koordination unterschiedlicher Unternehmensbereiche e Sicherheitsarchitektur und -maßnahmen zum Schutz von Daten, IT-Anwendungen und IT-Infrastrukturen, die durch den Betreiber der kritischen Dienstleistung oder von Dritten verwaltet werden sowie e Maßnahmen zur Einhaltung rechtlicher und regulatorischer Anforderungen (Compliance).",
+      "Verweis": "SA-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 66.1,
+      "Name": "Überprüfung und Freigabe von Richtlinien und Anweisungen",
+      "Beschreibung": "Die Richtlinien und Anweisungen zur Informationssicherheit werden mindestens jährlich durch mit dem Thema vertraute Fachkräfte des Betreibers der kritischen Dienstleistung hinsichtlich ihrer Angemessenheit und Wirksamkeit überprüft. Die Überprüfung berücksichtigt mindestens e organisatorische Änderungen beim Betreiber der kritischen Dienstleistung, e rechtliche und technische Änderungen im Umfeld des Betreibers der kritischen Dienstleistung. ",
+      "Verweis": "SA-02",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 66.2,
+      "Name": "Überprüfung und Freigabe von Richtlinien und Anweisungen",
+      "Beschreibung": "Überarbeitete Richtlinien und Anweisungen werden durch hierzu autorisierte Gremien oder Stellen des Betreibers der kritischen Dienstleistung genehmigt, bevor diese Gültigkeit erlangen. Die regelmäßige Überprüfung wird durch zentrale Stellen beim Betreiber nachgehalten.",
+      "Verweis": "SA-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 67.1,
+      "Name": "Abweichungen von bestehenden Richtlinien und Anweisungen",
+      "Beschreibung": "Ausnahmen von Richtlinien und Anweisungen zur Informationssicherheit werden durch hierzu autorisierte Gremien oder Stellen des Betreibers der kritischen Dienstleistung in dokumentierter Form genehmigt. ",
+      "Verweis": "SA-03",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 67.2,
+      "Name": "Abweichungen von bestehenden Richtlinien und Anweisungen",
+      "Beschreibung": "Die Angemessenheit genehmigter Ausnahmen und die Beurteilung der daraus entstehenden Risiken wird mindestens jährlich durch mit den Themen vertraute Fachkräfte des Betreibers der kritischen Dienstleistung vor dem Hintergrund der aktuellen und zukünftig erwarteten Bedrohungsumgebung in Bezug auf die Informationssicherheit überprüft.",
+      "Verweis": "SA-03",
+      "Umsetzungsgrad": "UG4"
+    }
+  ],
+  "Personenbezogene Maßnahmen": [    
+    {
+      "Anforderungsnummer": 56,
+      "Name": "Einstellung und Sicherheitsüberprüfung",
+      "Beschreibung": "Die Vergangenheit aller internen und externen Mitarbeiter des KRITIS-Betreibers mit Zugriff auf die für die Erbringung der kritischen Dienstleistung notwendigen informationstechnischen Systeme, Komponenten und Prozesse wird vor Beginn des Beschäftigungsverhältnisses gemäß der lokalen Gesetzgebung und Regulierung durch den KRITIS-Betreiber überprüft. Besondere Genehmigungsverfahren im Einstellungsprozess für Mitarbeiter und Positionen, bei denen Zugriff auf besonders sensible Informationen besteht, sind etabliert. Soweit rechtlich zulässig, umfasst die Überprüfung folgende Bereiche: Verifikation der Person durch Personalausweis, Verifikation des Lebenslaufs, Verifikation von akademischen Titeln und Abschlüssen, Anfrage eines polizeilichen Führungszeugnisses bei sensiblen Positionen im Unternehmen.",
+      "Verweis": "HR-01",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 57,
+      "Name": "Einstellung und Beschäftigungsvereinbarungen",
+      "Beschreibung": "Beschäftigungsvereinbarungen beinhalten die Verpflichtungen der internen und externen Mitarbeiter des KRITIS-Betreibers auf Einhaltung einschlägiger Gesetze, Vorschriften und Regelungen in Bezug zur Informationssicherheit. Die Sicherheitsleitlinie sowie die davon abgeleiteten Richtlinien und Anweisungen zur Informationssicherheit sind den Unterlagen zur Beschäftigungsvereinbarung beigefügt. Deren Einhaltung wird durch den Mitarbeiter schriftlich bestätigt, bevor Zugriff auf die kritische Dienstleistung oder die IT-Infrastruktur möglich ist.",
+      "Verweis": "HR-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 58,
+      "Name": "Rollenzuweisung und Vieraugenprinzip oder Funktionstrennung",
+      "Beschreibung": "Ein auf den Geschäfts- und Sicherheitsanforderungen des KRITIS-Betreibers basierendes Rollen- und Rechtekonzept sowie eine Richtlinie zur Verwaltung von Zugangs- und Zugriffsberechtigungen sind dokumentiert, kommuniziert und bereitgestellt und adressieren die folgenden Bereiche: e Die Vergabe und Änderung (Provisionierung) von Zugriffsberechtigungen auf Basis des Prinzips der geringsten Berechtigung ('Least Privilege Prinzip') und wie es für die Aufgabenwahrnehmung notwendig ist ('Need to know Prinzip') e Funktionstrennung zwischen operativen und kontrollierenden Funktionen ('Separation of Duties') e Funktionstrennung in der Administration von Rollen, Genehmigung und Zuweisung von Zugriffsberechtigungen e regelmäßige Überprüfung vergebener Berechtigungen e Berechtigungsentzug (Deprovisionierung) bei Veränderungen des Arbeitsverhältnisses e Anforderungen an Genehmigung und Dokumentation der Verwaltung von Zugangs- und Zugriffsberechtigungen.",
+      "Verweis": "IDM-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 59,
+      "Name": "Identitäts- und Berechtigungsmanagement -Benutzerregistrierung",
+      "Beschreibung": "Zugangsberechtigungen für Benutzer unter Verantwortung des KRITIS-Betreibers (interne und externe Mitarbeiter) werden in einem formalen Verfahren erteilt. Organisatorische und/oder technische Maßnahmen stellen sicher, dass eindeutige Benutzerkennungen vergeben werden, die jeden Benutzer eindeutig identifizieren.",
+      "Verweis": "IDM-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 60.1,
+      "Name": "Identitäts- und Berechtigungsmanagement —Zugriffsberechtigung",
+      "Beschreibung": "Vergabe und Änderung von Zugriffsberechtigungen für Benutzer unter Verantwortung des KRITIS-Betreibers erfolgen gemäß der Richtlinie zur Verwaltung von Zugangs- und Zugriffsberechtigungen. ",
+      "Verweis": "IDM-03",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 60.2,
+      "Name": "Identitäts- und Berechtigungsmanagement —Zugriffsberechtigung",
+      "Beschreibung": "Organisatorische und/oder technische Maßnahmen stellen sicher, dass die vergebenen Zugriffe die folgenden Anforderungen erfüllen: e Zugriffsberechtigungen entsprechen dem Prinzip der geringsten Berechtigung ('Least-Privilege-Prinzip') e Zugriffsberechtigungen werden nur so vergeben, wie es für die Aufgabenwahrnehmung notwendig ist ('Need-to-know-Prinzip') e die formalen Genehmigungen erfolgen durch eine autorisierte Person, bevor die Zugriffsberechtigungen eingerichtet werden (d. h. bevor der Benutzer auf die Systeme der kritischen Dienstleistung oder Komponenten der geteilten IT-Infrastruktur zugreifen kann) e die technisch zugewiesenen Zugriffsberechtigungen dürfen die formalen Genehmigungen nicht übersteigen.",
+      "Verweis": "IDM-03",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 61,
+      "Name": "Vergabe und Änderung (Provisionierung) von Zugriffsberechtigungen",
+      "Beschreibung": "Zugriffsberechtigungen von Benutzern unter Verantwortung des KRITIS-Betreibers (interne und externe Mitarbeiter) werden bei Änderungen im Beschäftigungsverhältnis (Kündigung, Versetzung, längerer Abwesenheit/Sabbatical/Elternzeit) zeitnah, spätestens aber 30 Tage nach Inkrafttreten entzogen bzw. vorübergehend ruhestellend gesetzt. Zugänge werden vollständig deaktiviert, sobald das Beschäftigungsverhältnis erlischt.",
+      "Verweis": "IDM-04",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 62,
+      "Name": "Identitäts- und Berechtigungsmanagement -Überprüfungen",
+      "Beschreibung": "Zugriffsberechtigungen von Benutzern unter Verantwortung des KRITIS-Betreibers (interne und externe Mitarbeiter) werden mindestens jährlich überprüft, um diese zeitnah auf Änderungen im Beschäftigungsverhältnis (Kündigung, Versetzung, längerer Abwesenheit/Sabbatical/Elternzeit) anzupassen. Die Überprüfung erfolgt durch hierzu autorisierte Personen aus den Unternehmensbereichen des KRITIS-Betreibers, die aufgrund ihres Wissens über die Zuständigkeiten die Angemessenheit der vergebenen Berechtigungen überprüfen können. Die Überprüfung sowie die sich daraus ergebenden Berechtigungsanpassungen werden nachvollziehbar dokumentiert. Administrative Berechtigungen werden regelmäßig (mind. jährlich) überprüft.",
+      "Verweis": "IDM-05",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 63,
+      "Name": "Identitäts- und Berechtigungsmanagement -Administratoren",
+      "Beschreibung": "Vergabe und Änderung von Zugriffsberechtigungen für interne und externe Benutzer mit administrativen oder weitreichenden Berechtigungen unter Verantwortung des KRITIS-Betreibers erfolgen gemäß der Richtlinie zur Verwaltung von Zugangs- und Zugriffsberechtigungen. Die Zuweisung erfolgt personalisiert und wie es für die Aufgabenwahrnehmung notwendig ist ('Need-to-know-Prinzip'). Organisatorische und/oder technische Maßnahmen stellen sicher, dass durch die Vergabe dieser Berechtigungen keine ungewollten, kritischen Kombinationen entstehen, die gegen das Prinzip der Funktionstrennung verstoßen (z. B. Zuweisen von Berechtigungen zur Administration der Datenbank wie auch des Betriebssystems). Soweit dies in ausgewählten Fällen nicht möglich ist, sind angemessene, kompensierende Kontrollen eingerichtet, um einen Missbrauch dieser Berechtigungen zu identifizieren (z. B. Protokollierung und Überwachung durch eine SIEM-Lösung (Security Information and Event Management)).",
+      "Verweis": "IDM-06",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 64,
+      "Name": "Identitäts- und Berechtigungsmanagement -Notfallbenutzer",
+      "Beschreibung": "Die Verwendung von Notfallbenutzern (für Aktivitäten, die mit personalisierten, administrativen Benutzern nicht durchgeführt werden können) ist dokumentiert, zu begründen und bedarf der Genehmigung durch eine autorisierte Person, die unter Berücksichtigung des Prinzips der Funktionstrennung zu erfolgen hat. Die Freischaltung des Notfallbenutzers erfolgt nur so lange, wie es für die Aufgabenwahrnehmung notwendig ist. Mindestens jährlich wird ein manueller Abgleich zwischen den erfolgten Freischaltungen der Notfallbenutzer und den entsprechenden Genehmigungen durchgeführt. Auffälligkeiten werden untersucht, um Missbrauch dieser Benutzer festzustellen und zukünftig zu verhindern. Die Aktivitäten der Notfallbenutzer werden revisionssicher protokolliert. Die Protokollierung ist hinreichend detailliert, um es einem sachverständigen Dritten zu ermöglichen, die Aktivitäten nachzuvollziehen.",
+      "Verweis": "IDM-09",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 68.1,
+      "Name": "Schulungen und Awareness",
+      "Beschreibung": "Ein Programm zur zielgruppenorientierten Sicherheitsausbildung und Sensibilisierung zum Thema Informationssicherheit existiert und ist verpflichtend für alle internen und externen Mitarbeiter des KRITIS-Betreibers. Das Programm wird regelmäßig in Bezug auf die gültigen Richtlinien und Anweisungen, den zugewiesenen Rollen und Verantwortlichkeiten sowie den bekannten Bedrohungen aktualisiert und ist dann erneut zu durchlaufen. Das Programm umfasst mindestens die folgenden Inhalte: e Die regelmäßige und dokumentierte Unterweisung hinsichtlich der sicheren Konfiguration und des sicheren Betriebs der für die kritische Dienstleistung erforderlichen IT-Anwendungen und IT-Infrastruktur, einschließlich mobiler Endgeräte e die regelmäßige und dokumentierte Unterrichtung über bekannte Bedrohungen und e das regelmäßige und dokumentierte Training des Verhaltens beim Auftreten sicherheitsrelevanter Ereignisse. ",
+      "Verweis": "HR-03",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 68.2,
+      "Name": "Schulungen und Awareness",
+      "Beschreibung": "Externe Dienstleister und Lieferanten des KRITIS-Betreibers, die zum Betrieb der kritischen Dienstleistung beitragen, werden vertraglich verpflichtet, ihre Mitarbeiter und Unterauftragnehmer auf die spezifischen Sicherheitsanforderungen des KRITIS-Betreibers hinzuweisen und ihre Mitarbeiter allgemein zum Thema Informationssicherheit zu schulen. Das Programm berücksichtigt verschiedene Profile und umfasst weitere Informationen für Positionen und Mitarbeiter, die umfangreiche Berechtigungen oder Zugriff auf sensible Daten haben. Externe Mitarbeiter von Dienstleistern und Lieferanten des KRITIS-Betreibers, die zum Betrieb der kritischen Dienstleistung beitragen, werden in den spezifischen Sicherheitsanforderungen des Betreibers der kritischen Infrastrukturen sowie allgemein zum Thema Informationssicherheit unterwiesen.",
+      "Verweis": "HR-03",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 69,
+      "Name": "Disziplinarverfahren",
+      "Beschreibung": "Ein Prozess für die Durchführung von Disziplinarmaßnahmen ist implementiert und an die Mitarbeiter kommuniziert, um die Konsequenzen von Verstößen gegen die gültigen Richtlinien und Anweisungen sowie rechtliche Vorgaben und Gesetze transparent zu machen.",
+      "Verweis": "HR-04",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 70,
+      "Name": "Beendigung des Beschäftigungsverhältnisses",
+      "Beschreibung": "Interne sowie externe Mitarbeiter sind darüber informiert, dass die Verpflichtungen auf Einhaltung einschlägiger Gesetze, Vorschriften und Regelungen in Bezug zur Informationssicherheit auch bei einem Wechsel des Aufgabengebietes oder der Auflösung des Beschäftigungsverhältnisses bestehen bleiben.",
+      "Verweis": "HR-05",
+      "Umsetzungsgrad": "UG2"
+    }
+  ],
+  "Technische Maßnahmen": [
+    {
+      "Anforderungsnummer": 20.1,
+      "Name": "Notwendige/ausreichende Personal- und IT-Ressourcen (Betrieb und IT-Sicherheit)",
+      "Beschreibung": "Die Planung von Kapazitäten und Ressourcen (Personal und IT-Ressourcen) folgt einem etablierten Verfahren, um mögliche Kapazitätsengpässe zu vermeiden. Die Verfahren umfassen Prognosen von zukünftigen Kapazitätsanforderungen, um Nutzungstrends zu identifizieren und Risiken der Systemüberlastung zu beherrschen. ",
+      "Verweis": "RB-01, RB-02",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 20.2,
+      "Name": "Notwendige/ausreichende Personal- und IT-Ressourcen (Betrieb und IT-Sicherheit)",
+      "Beschreibung": "Technische und organisatorische Maßnahmen zur Überwachung und Provisionierung bzw. Deprovisionierung bei KRITIS-Betreiber sind definiert. Dadurch stellt der Betreiber sicher, dass Ressourcen bereitgestellt bzw. Leistungen gemäß der vertraglichen Vereinbarung erbracht werden und die Einhaltung der Dienstgütevereinbarungen sichergestellt ist.",
+      "Verweis": "RB-01, RB-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 21,
+      "Name": "Schutz vor Schadprogrammen",
+      "Beschreibung": "Die logischen und physischen IT-Systeme, die der Betreiber zur Erbringung der kritischen Dienstleistung verwendet sowie die Perimeter des Netzwerks, die dem Verantwortungsbereich des KRITIS-Betreibers unterliegen, sind mit Virenschutz- und Reparaturprogrammen versehen, die eine signatur- und verhaltensbasierte Erkennung und Entfernung von Schadprogrammen ermöglichen. Die Programme werden gemäß den vertraglichen Vereinbarungen mit dem/n Hersteller/n, mindestens aber täglich, aktualisiert.",
+      "Verweis": "RB-05",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 22,
+      "Name": "Datensicherung und Wiederherstellung",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen zum Vermeiden von Datenverlusten sind gemäß IT-Sicherheitsrichtlinie dokumentiert, kommuniziert und bereitgestellt. Diese sehen zuverlässige Verfahren für die regelmäßige Sicherung (Backup sowie ggf. Snapshots) und Wiederherstellung von Daten (Restore) vor. Umfang, Häufigkeit und Dauer der Aufbewahrung entsprechen den Anforderungen der kritischen Dienstleistung. Der Zugriff auf die gesicherten Daten ist auf autorisiertes Personal beschränkt. Wiederherstellungsprozeduren beinhalten Kontrollmechanismen, die sicherstellen, dass Wiederherstellungen ausschließlich nach Genehmigung durch hierfür autorisierte Personen gemäß den internen Richtlinien erfolgen.",
+      "Verweis": "RB-06, RB-09",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 23,
+      "Name": "Datensicherung und Wiederherstellung - Überwachung",
+      "Beschreibung": "Die Ausführung der Datensicherung wird durch technische und organisatorische Maßnahmen überwacht. Störungen werden durch qualifizierte Mitarbeiter untersucht und zeitnah behoben, um die Einhaltung der Anforderungen in Bezug auf Umfang, Häufigkeit und Dauer der Aufbewahrung zu gewährleisten.",
+      "Verweis": "RB-07",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 24,
+      "Name": "Datensicherung und Wiederherstellung - Regelmäßige Tests",
+      "Beschreibung": "Sicherungsdatenträger und Wiederherstellungsverfahren sind von qualifizierten Mitarbeitern regelmäßig mit dedizierten Testmedien zu prüfen. Die Tests sind so gestaltet, dass die Verlässlichkeit der Sicherungsdatenträger und die Wiederherstellungszeit mit hinreichender Sicherheit überprüft werden kann. Die Tests werden durch qualifizierte Mitarbeiter durchgeführt und die Ergebnisse nachvollziehbar dokumentiert. Auftretende Fehler werden zeitnah behoben.",
+      "Verweis": "RB-08",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 25,
+      "Name": "Umgang mit Schwachstellen, Störungen und Fehlern - System-Härtung",
+      "Beschreibung": "Systemkomponenten, welche für die Erbringung der kritischen Dienstleistung verwendet werden, sind gemäß allgemein etablierten und akzeptierten Industriestandards gehärtet. Die herangezogenen Härtungsanleitungen werden ebenso wie der Umsetzungsstatus dokumentiert.",
+      "Verweis": "RB-22",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 26,
+      "Name": "Geheimhaltung von Authentifizierungsinformationen",
+      "Beschreibung": "Die Zuteilung geheimer Authentifizierungsinformationen (z. B. Passwörter, Zertifikate, Sicherheitstoken) an interne und externe Benutzer des KRITIS-Betreibers erfolgt, soweit dies organisatorischen oder technischen Verfahren des KRITIS-Betreibers unterliegt, in einem geordneten Verfahren, das die Vertraulichkeit der Informationen sicherstellt. Soweit diese initial vergeben werden, sind diese nur temporär, höchstens aber 14 Tage gültig. Benutzer werden ferner gezwungen, diese bei der ersten Verwendung zu ändern.",
+      "Verweis": "IDM-07",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 27,
+      "Name": "Sichere Anmeldeverfahren",
+      "Beschreibung": "Die Vertraulichkeit der Anmeldeinformationen von internen und externen Benutzern unter Verantwortung des KRITIS-Betreibers sind durch die folgenden Maßnahmen geschützt: e Identitätsprüfung durch vertrauenswürdige Verfahren e Verwendung anerkannter Industriestandards zur Authentifizierung und Autorisierung (z. B. Multi-Faktor-Authentifizierung, keine Verwendung von gemeinsam genutzten Authentifizierungsinformationen, automatischer Ablauf) e Multi-Faktor-Authentifizierung für Administratoren des KRITIS-Betreibers (z. B. durch Smart Card oder biometrische Merkmale) ist zwingend erforderlich, sofern ein Zugriff über öffentliche Netze erfolgt.",
+      "Verweis": "IDM-08",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 28,
+      "Name": "Systemseitige Zugriffskontrolle",
+      "Beschreibung": "Der Zugriff auf Informationen und Anwendungsfunktionen wird durch technische Maßnahmen eingeschränkt, mit denen das Rollen- und Rechtekonzept umgesetzt wird.",
+      "Verweis": "IDM-10",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 29,
+      "Name": "Passwortanforderungen und Validierungsparameter",
+      "Beschreibung": "Sicherheitsparameter auf Netzwerk-, Betriebssystem- (Host und Gast), Datenbank- und Anwendungsebene (soweit für die kritische Dienstleistung relevant) sind angemessen konfiguriert, um unautorisierte Zugriffe zu verhindern. Soweit keine Zwei-Faktor-Authentifizierung oder die Verwendung von Einmalpasswörtern möglich ist, wird die Verwendung sicherer Passwörter auf allen Ebenen und Geräten (einschließlich mobilen Endgeräten) unter Verantwortung des KRITIS-Betreibers technisch erzwungen oder in einer Passwort-Richtlinie organisatorisch gefordert. Die Vorgaben müssen mindestens die folgenden Anforderungen erfüllen: e Minimale Passwortlänge von 8 Zeichen e Mindestens zwei der folgenden Zeichentypen müssen enthalten sein: Großbuchstaben, Kleinbuchstaben, Sonderzeichen und Zahlen e Maximale Gültigkeit von 90 Tagen, minimale Gültigkeit von 1 Tag e Passworthistorie von 6 e Übertragung und Speicherung der Passwörter in einem verschlüsselten Verfahren, das dem aktuellen Stand der Technik entspricht.",
+      "Verweis": "IDM-11",
+      "Umsetzungsgrad": "UG2"
+    },
+	{
+      "Anforderungsnummer": 30,
+      "Name": "Einschränkung und Kontrolle administrativer Software",
+      "Beschreibung": "Die Verwendung von Dienstprogrammen und Managementkonsolen, die weitreichenden Zugriff auf die Daten der für die kritische Dienstleistung relevanten Daten ermöglichen, ist auf autorisierte Personen beschränkt. Vergabe und Änderung entsprechender Zugriffsberechtigungen erfolgen gemäß der Richtlinie zur Verwaltung von Zugangs- und Zugriffsberechtigungen. Der Zugriff wird durch starke Authentifizierungstechniken, einschließlich Multi-Faktor-Authentifizierung, gesteuert.",
+      "Verweis": "IDM-12",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 31,
+      "Name": "Zugriffskontrolle zu Quellcode",
+      "Beschreibung": "Der Zugriff auf den Quellcode und ergänzende für die Entwicklung der kritischen Dienstleistung relevante Informationen (z. B. Architektur-Dokumentation, Testpläne) sind restriktiv vergeben und werden überwacht, um die Einführung von nicht autorisierten Funktionen oder das Durchführen unbeabsichtigter Änderungen zu vermeiden.",
+      "Verweis": "IDM-13",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 32,
+      "Name": "Richtlinie zur Nutzung von Verschlüsselungsverfahren und Schlüsselverwaltung",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen für Verschlüsselungsverfahren und Schlüsselverwaltung sind gemäß IT-Sicherheitsrichtlinie dokumentiert, kommuniziert und bereitgestellt, in denen die folgenden Aspekte beschrieben sind: das Nutzen von starken Verschlüsselungsverfahren (z. B. AES) und die Verwendung von sicheren Netzwerkprotokollen, die dem Stand der Technik entsprechen (z. B. TLS, IPsec, SSH). e risikobasierte Vorschriften für den Einsatz von Verschlüsselung, die mit Schemata zur Informationsklassifikation abgeglichen sind und den Kommunikationskanal, Art, Stärke und Qualität der Verschlüsselung e Anforderungen für das sichere Erzeugen, Speichern, Archivieren, Abru-fen, Verteilen, Entziehen und Löschen der Schlüssel e Berücksichtigung der relevanten rechtlichen und regulatorischen Ver-pflichtungen und Anforderungen. ",
+      "Verweis": "KRY-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 33,
+      "Name": "Verschlüsselung von Daten bei der Übertragung",
+      "Beschreibung": "Verfahren und technische Maßnahmen zur starken Verschlüsselung und Authentifizierung bei der Übertragung von Daten der kritischen Dienstleistung (z. B. über öffentliche Netze transportierte elektronische Nachrichten) sind etabliert.",
+      "Verweis": "KRY-02",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 34,
+      "Name": "Verschlüsselung von sensiblen Daten bei der Speicherung",
+      "Beschreibung": "Verfahren und technische Maßnahmen zur Verschlüsselung sensibler Daten bei der Speicherung der kritischen Dienstleistung sind etabliert. Ausnahmen gelten für Daten, die für die Erbringung der kritischen Dienstleistung funktionsbedingt nicht verschlüsselt sein können.",
+      "Verweis": "KRY-03",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 35,
+      "Name": "Sichere Schlüsselverwaltung",
+      "Beschreibung": "Verfahren und technische Maßnahmen zur sicheren Schlüsselverwaltung beinhalten mindestens die folgenden Aspekte: Schlüsselgenerierung für unterschiedliche kryptografische Systeme und Applikationen, Ausstellung und Einholung von Public-Key-Zertifikaten, Provisionierung und Aktivierung von Schlüsseln für beteiligte Dritte, sicheres Speichern eigener Schlüssel, Änderungen oder Aktualisierungen von kryptografischen Schlüsseln, Umgang mit kompromittiertem Schlüssel, Entzug und Löschen von Schlüsselnbspw. im Falle von Kompromittie-rung oder Mitarbeiterveränderungen.",
+      "Verweis": "KRY-04",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 36,
+      "Name": "Technische Schutzmaßnahmen",
+      "Beschreibung": "Basierend auf den Ergebnissen einer durchgeführten Risiko-Analyse hat der KRITIS-Betreiber technische Schutzmaßnahmen implementiert, die geeignet sind, um netzwerkbasierte Angriffe auf Basis anomaler Eingangs- oder Ausgangs-Traffic-Muster zeitnah zu erkennen und darauf zu reagieren. Zusätzlich werden, wo notwendig bzw. sinnvoll, Intrusion Detection- und Intrusion Prevention-Systeme (IDS und IPS) eingesetzt.",
+      "Verweis": "KOS-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 37,
+      "Name": "Überwachen von Verbindungen",
+      "Beschreibung": "Physische und virtualisierte Netzwerkumgebungen sind so konzipiert und konfiguriert, dass die Verbindungen zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzen zu beschränken und zu überwachen sind. In festgelegten Abständen wird die geschäftliche Rechtfertigung für die Verwendung aller Dienste, Protokolle und Ports überprüft. Darüber hinaus um-fasst die Überprüfung auch die Begründungen für kompensierende Kontrol-len für die Verwendung von Protokollen, die als unsicher angesehen werden.",
+      "Verweis": "KOS-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 38,
+      "Name": "Netzwerkübergreifende Zugriffe",
+      "Beschreibung": "Jeder Netzwerkperimeter wird von Sicherheitsgateways kontrolliert. Die Zugriffsberechtigung für netzwerkübergreifende Zugriffe basiert auf einer Sicherheitsbewertung.",
+      "Verweis": "KOS-03",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 39,
+      "Name": "Netzwerke zur Administration",
+      "Beschreibung": "Es existieren gesonderte Netzwerke zur administrativen Verwaltung der Infrastruktur und für den Betrieb von Managementkonsolen, die logisch oder physisch vom Netzwerk des KRITIS-Betreibers getrennt und durch Multi-Faktor-Authentifizierung vor unberechtigten Zugriffen geschützt sind. Netzwerke, die zum Zwecke der Migration oder dem Erzeugen von virtuel-len Maschinen dienen, sind ebenfalls physisch oder logisch von anderen Netzwerken zu separieren.",
+      "Verweis": "KOS-04",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 40,
+      "Name": "Dokumentation der Netztopologie",
+      "Beschreibung": "Die Architektur des Netzwerks ist nachvollziehbar und aktuell dokumentiert, um im Wirkbetrieb Fehler in der Verwaltung zu vermeiden und um im Schadensfall eine zeitgerechte Wiederherstellung gemäß den vertraglichen Verpflichtungen zu gewährleisten. Aus der Dokumentation gehen die unterschiedlichen Umgebungen (z. B. Ad-ministrations-Netzwerk und geteilte Netzwerksegmente) und Datenflüsse hervor.",
+      "Verweis": "KOS-06",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 41,
+      "Name": "Richtlinien zur Datentransferung",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen zum Schutz der Datentransferung vor unbefugtem Abfangen, Manipulieren, Kopieren, Modifizieren, Umleiten oder Vernichten sind gemäß IT-Sicherheitsrichtlinie dokumentiert, kommuniziert und bereitgestellt. Die Vorgaben stellen einen Bezug zur Klassifikation von Informationen her (vgl. Nr. 9).",
+      "Verweis": "KOS-07",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 42,
+      "Name": "Vertraulichkeitserklärung",
+      "Beschreibung": "Die mit internen Mitarbeitern, externen Dienstleistern sowie Lieferanten des KRITIS-Betreibers zu schließenden Geheimhaltungs- oder Vertraulichkeitserklärungen basieren auf den Anforderungen des KRITIS-Betreibers zum Schutz vertraulicher Daten und betrieblicher Details. Die Anforderungen sind zu identifizieren, dokumentieren und in regelmäßi-gen Abständen (mindestens jährlich) zu überprüfen. Soweit sich aus der Überprüfung ergibt, dass die Anforderungen anzupassen sind, werden mit den internen Mitarbeitern, den externen Dienstleistern sowie den Lieferan-ten des KRITIS-Betreibers neue Geheimhaltungs- oder Vertraulichkeitser-klärungen abgeschlossen. Die Geheimhaltungs- oder Vertraulichkeitserklä-rungen sind vor Beginn des Vertragsverhältnisses bzw. vor Erteilung des Zu-griffs auf Daten des KRITIS-Betreibers durch interne Mitarbeiter, externe Dienstleister oder Lieferanten des KRITIS-Betreibers zu unterzeichnen.Soweit sich aus der Überprüfung Anpassungen an die Geheimhaltungs- oder Vertraulichkeitserklärungen ergeben, sind die internen und externen Mitar-beiter des Betreibers der Kritischen Infrastrukturen darüber in Kenntnis zu setzen und neue Bestätigungen einzuholen.",
+      "Verweis": "KOS-08",
+      "Umsetzungsgrad": "UG2"
+    },
+	{
+      "Anforderungsnummer": 43,
+      "Name": "Richtlinien zur Entwicklung/Beschaffung von Informationssystemen",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen für die ordnungsgemäße Entwicklung und/oder Beschaffung von Informationssystemen für die Entwicklung oder den Betrieb der kritischen Dienstleistung sind gemäß IT-Sicherheitsrichtlinie dokumentiert, kommuniziert und bereitgestellt. Diese beinhalten Sicherheit in der Softwareentwicklungsmethodik, Sicherheit der Entwicklungsumgebung, Programmierrichtlinien und Sicherheit in der Versionskontrolle.",
+      "Verweis": "BEI-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 44,
+      "Name": "Auslagerung der Entwicklung",
+      "Beschreibung": "Bei ausgelagerter Entwicklung der kritischen Dienstleistung (oder Teilen da-von) in Bezug auf Design, Entwicklung, Test und/oder Bereitstellung von Quellcode der kritischen Dienstleistung ist ein hohes Maß an Sicherheit ge-fordert. Deshalb sind mindestens die folgenden Aspekte vertraglich zwi-schen KRITIS-Betreiber und externem Dienstleister zu vereinbaren: e Anforderungen an einen sicheren Software-Entwicklungsprozess (insbe-sondere Design, Entwicklung und Test) e Bereitstellung von Nachweisen, dass eine ausreichende Prüfung vom ex-ternen Dienstleister durchgeführt wurde e Abnahmeprüfung der Qualität der erbrachten Leistungen gemäß den vereinbarten funktionalen und nicht-funktionalen Anforderungen e Das Recht, den Entwicklungsprozess und Kontrollen einer Prüfung, auch stichprobenartig, zu unterziehen.",
+      "Verweis": "BEI-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 45,
+      "Name": "Richtlinien zur Änderung von Informationssystemen",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maß-nahmen für eine ordnungsgemäße Verwaltung von Änderungen (Change Management) an Informationssystemen für die Entwicklung oder den Be-trieb der kritischen Dienstleistung, einschließlich Anwendungen, Middle-ware, Datenbanken, Betriebssystemen und Netzwerkkomponenten sind ge-mäß IT-Sicherheitsrichtlinie dokumentiert, kommuniziert und bereitge-stellt. e Mindestens die folgenden Aspekte sind dabei zu berücksichtigen: e Risikobeurteilung e Kriterien zur Kategorisierung und Priorisierung von Änderungen und damit verbundene Anforderungen an Art und Umfang durchzuführen-der Tests und einzuholender Genehmigungen e Anforderungen zur Benachrichtigung betroffener Stakeholder gemäß den vertraglichen Vereinbarungen e Anforderungen an die Dokumentation von Tests sowie zur Beantragung und Genehmigung von Änderungen e Anforderungen an die Durchführung von Roll-Backs e Anforderungen an die Dokumentation von Änderungen in der System-, Betriebs- und Benutzerdokumentation e Anforderungen an die Durchführung von Notfalländerungen e Anforderungen an die System- und Funktionstrennung.",
+      "Verweis": "BEI-03",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 46,
+      "Name": "Risikobewertung der Änderungen",
+      "Beschreibung": "Der Auftraggeber einer Änderung von Informationssystemen führt zuvor eine Risikobewertung durch. Alle möglicherweise von der Änderung betroffenen Konfigurationsobjekte werden auf potenzielle Auswirkungen hin bewertet. Das Ergebnis der Risikobewertung ist angemessen und nachvoll-ziehbar zu dokumentieren.",
+      "Verweis": "BEI-04",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 47,
+      "Name": "Kategorisierung der Änderungen",
+      "Beschreibung": "Alle Änderungen von Informationssystemen werden basierend auf einer Risikobewertung kategorisiert, um eine angemessene Autorisierung vor Bereitstellung der Änderung in der Produktivumgebung einzuholen.",
+      "Verweis": "BEI-05",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 48,
+      "Name": "Priorisierung der Änderungen",
+      "Beschreibung": "Alle Änderungen werden basierend auf einer Risikobewertung priorisiert, um eine angemessene Autorisierung vor Bereitstellung der Änderung in der Produktivumgebung einzuholen.",
+      "Verweis": "BEI-06",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 49,
+      "Name": "Testen der Änderungen",
+      "Beschreibung": "Alle Änderungen an der kritischen Dienstleistung werden Tests (z.B. auf Integration, Regression, Sicherheit und Benutzerakzeptanz) während der Entwicklung und vor der Bereitstellung in der Produktivumgebung unterzogen. Die Tests werden von angemessen qualifiziertem Personal des KRITIS-Be-treibers durchgeführt.",
+      "Verweis": "BEI-07",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 50,
+      "Name": "Zurückrollen der Änderungen",
+      "Beschreibung": "Es sind Abläufe definiert, um erforderliche Änderungen in Folge von Fehlern oder Sicherheitsbedenken zurückrollen zu können und betroffene Systeme oder Dienste im vorherigen Zustand wiederherzustellen.",
+      "Verweis": "BEI-08",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 51,
+      "Name": "Überprüfen von ordnungsgemäßer Testdurchführung und Genehmigung",
+      "Beschreibung": "Bevor eine Änderung in der Produktivumgebung veröffentlicht wird, ist diese durch eine autorisierte Stelle dahingehend zu überprüfen, ob die geplanten Tests erfolgreich abgeschlossen und die erforderlichen Genehmigungen erteilt sind. Für eine angemessene Zufallsstichprobe von Änderungen in der Produk-tivumgebung wird in einem risikoorientierten Ansatz überprüft, ob die in-ternen Anforderungen in Bezug auf ordnungsgemäße Klassifizierung, Test und Genehmigung von Änderungen eingehalten wurden.",
+      "Verweis": "BEI-09",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 52,
+      "Name": "Notfalländerungen",
+      "Beschreibung": "Notfalländerungen sind als solche von dem Änderungsmanager zu klassifizieren, der die Änderungsdokumentation vor Übertragung der Änderung in die Produktivumgebung erstellt. Anschließend (z. B. innerhalb von 5 Werktagen) fügt der Änderungsmanager Begründung und Ergebnis der Übertragung der Notfalländerung zu der Än-derungsdokumentation hinzu. Aus der Begründung muss hervorgehen, wa-rum der reguläre Änderungsprozess nicht durchlaufen werden konnte und was die Folgen einer Verzögerung durch Einhaltung des regulären Prozesses gewesen wären.",
+      "Verweis": "BEI-10",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 53,
+      "Name": "Systemlandschaft",
+      "Beschreibung": "Produktivumgebungen sind von Nicht-Produktivumgebungen physisch oder logisch getrennt, um unbefugten Zugriff oder Änderungen an Produktivdaten zu vermeiden. Produktivdaten werden nur im Rahmen von defi-nierten Vorgaben in Test- oder Entwicklungsumgebungen repliziert, um de-ren Vertraulichkeit zu wahren.",
+      "Verweis": "BEI-11",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 54,
+      "Name": "Funktionstrennung",
+      "Beschreibung": "Verfahren zum Change Management beinhalten rollenbasierte Autorisierungen, um eine angemessene Funktionstrennung bei Entwicklung, Freigabe und Migration von Änderungen zwischen den Umgebungen sicherzustellen.",
+      "Verweis": "BEI-12",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 55,
+      "Name": "Richtlinien und Verfahren zur Risikominimierung des Zugriffs über mobile Endgeräte des KRITIS-Betreibers",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen für die ordnungsgemäße Verwendung mobiler Endgeräte sowie andere Remote-Zugriffe im Verantwortungsbereich des KRITIS-Betreibers sind dokumentiert, kommuniziert und bereitgestellt. Darin werden mindestens folgende Aspekte beachtet, soweit diese auf die Si-tuation des KRITIS-Betreibers anwendbar sind: e Verschlüsselung der Geräte und der Datenübertragung e verstärkter Zugriffsschutz e erweitertes Identitäts- und Berechtigungsmanagement e Verbot von Jailbreaking/Rooting e Installation nur von freigegebenen Anwendungen aus als vertrauens-würdig eingestuften „App Stores“ e Bring-Your-Own-Device (BYOD) –Mindestanforderungen an private Endgeräte.",
+      "Verweis": "MDM-01",
+      "Umsetzungsgrad": "UG2"
+    }
+  ],
+  "Physische Maßnahmen": [
+    {
+      "Anforderungsnummer": 71,
+      "Name": "Rechenzentrumsversorgung",
+      "Beschreibung": "Die Versorgung der für den Betrieb der kritischen Dienstleistung notwendigen IT-Systeme (z.B. Elektrizität, Temperatur- und Feuchtigkeitskontrolle, Telekommunikation und Internetverbindung) ist abgesichert, überwacht und wird regelmäßig gewartet und getestet, um eine durchgehende Wirksamkeit zu gewährleisten. Sie ist mit automatischen Ausfallsicherungen und anderen Redundanzen konzipiert. Die Wartung wird in Übereinstimmung mit den von den Lieferanten empfohlenen Wartungsintervallen und Vorgaben sowie ausschließlich von autorisiertem Personal durchgeführt. Wartungsprotokolle einschließlich vermuteter oder festgestellter Mängel werden für den Zeitraum der zuvor vertraglich vereinbarten Frist aufbewahrt.",
+      "Verweis": "BCM-05",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 72,
+      "Name": "Perimeterschutz",
+      "Beschreibung": "Es ist ein geeigneter Rahmen für die bauliche und physische Sicherheit, die zum sicheren Betrieb einer kritischen Dienstleistung notwendig ist, zu setzen. Die Begrenzungen von Räumlichkeiten oder Gebäuden, die sensible oder kritische Informationen, Informationssysteme oder sonstige Netzwerkinfrastruktur beherbergen, sind physisch solide und durch angemessene Sicherheitsmaßnahmen geschützt, die dem Stand der Technik entsprechen. Das Sicherheitskonzept beinhaltet die Einrichtung von verschiedenen Sicherheitszonen, die durch Sicherheitslinien als überwachte und gesicherte Übergänge zwischen den Zonen getrennt sind, wenn dies für den Schutz der kritischen Dienstleistung notwendig ist.",
+      "Verweis": "PS-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 73,
+      "Name": "Physischer Zutrittsschutz",
+      "Beschreibung": "Zugänge zu Räumlichkeiten oder Gebäuden, die sensible oder kritische Informationen, Informationssysteme oder sonstige Netzwerkinfrastruktur für den Betreiber einer kritischen Dienstleistung beherbergen, sind durch physische Zutrittskontrollen gesichert und überwacht, um unbefugten Zutritt zu verhindern.",
+      "Verweis": "PS-02",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 74,
+      "Name": "Schutz vor Bedrohungen von außen",
+      "Beschreibung": "Räumlichkeiten oder Gebäude, die sensible oder kritische Informationen, Informationssysteme oder sonstige Netzwerkinfrastruktur für die kritische Dienstleistung beherbergen, sind durch bauliche, technische und organisatorische Maßnahmen vor Feuer, Wasser, Erdbeben, Explosionen, zivile Unruhen und andere Formen natürlicher und von Menschen verursachter Bedrohungen geschützt. An zwei georedundanten Standorten sind mindestens die folgenden Maßnahmen getroffen: Bauliche Maßnahmen: e Einrichtung eines eigenen Brandabschnitts für das Rechenzentrum e Verwendung feuerbestandiger Materialien gemäß DIN 4102-1 oder EN 13501 (Feuerwiderstandsdauer von mindestens 90 Minuten). Technische Maßnahmen: e Sensoren zum Überwachen von Temperatur und Luftfeuchtigkeit e Aufschalten des Gebäudes an einer Brandmeldeanlage mit Meldung an die örtliche Feuerwehr e Brandfrüherkennungs- und Löschanlage. Organisatorische Maßnahmen: e Regelmäßige Brandschutzübungen und Brandschutzbegehungen, um die Einhaltung der Brandschutzmaßnahmen zu prüfen. Es findet eine Überwachung der Umgebungsparameter statt. Bei Verlassen des zulässigen Regelbereichs werden Alarmmeldungen generiert und an die dafür zuständigen Stellen weitergeleitet.",
+      "Verweis": "PS-03",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 75,
+      "Name": "Schutz vor Unterbrechungen durch Stromausfälle und andere derartige Risiken",
+      "Beschreibung": "Dem Ausfall von Versorgungsleistungen wie Strom, Kühlung oder Netzanbindungen für Anlagen der kritischen Dienstleistung wird durch geeignete Maßnahmen und Redundanzen, in Abstimmung mit den Maßnahmen zur Betriebssicherheit, vorgebeugt. Versorgungsleistungen für Strom und Telekommunikation, welche Daten transportieren oder Informationssysteme versorgen, sind vor Abfällen und Beschädigung geschützt. Es findet eine Überwachung der Versorgungsleistungen statt. Bei Verlassen des zulässigen Regelbereichs werden Alarmmeldungen generiert und an die dafür zuständigen Stellen weitergeleitet. Der Betreiber der kritischen Dienstleistung ermittelt und kommuniziert die Autark-Zeiten, die durch die getroffenen Maßnahmen bei Ausfall der Versorgungsleistungen oder beim Eintritt von außergewöhnlichen Ereignissen (z. B. Hitzeperioden, langer anhaltender Stromausfall) erreicht werden sowie die maximal tolerierbaren Zeiten für einen Ausfall der Versorgungsleistungen. Verträge für die Aufrechterhaltung der Notfallversorgung mit entsprechen-den Dienstleistern sind abgeschlossen (z. B. für den Treibstoff der Notstrom-versorgung).",
+      "Verweis": "PS-04",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 76,
+      "Name": "Wartung der Infrastruktur",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen für die Erbringung der kritischen Dienstleistung sind dokumentiert, kommuniziert und bereitgestellt, welche die Wartung (insb. Fernwartung), Löschung, Aktualisierung und Wiederverwendung von Assets in der Informationsverarbeitung in ausgelagerten Räumlichkeiten oder durch externes Personal beschreiben.",
+      "Verweis": "PS-05",
+      "Umsetzungsgrad": "UG2"
+    }
+  ],
+  "Detektion und Reaktion": [
+    {
+      "Anforderungsnummer": 84,
+      "Name": "Umgang mit Schwachstellen, Störungen und Fehlern - Prüfung offener Schwachstellen",
+      "Beschreibung": "Die IT-Systeme, welche der KRITIS-Betreiber für die Entwicklung und Erbringung der kritischen Dienstleistung verwendet, werden mindestens monatlich automatisiert auf bekannte Schwachstellen (Vulnerabilities) geprüft. Im Falle von Abweichungen zu den erwarteten Konfigurationen (u.a. dem erwarteten Patch-Level) werden die Gründe hierzu zeitnah analysiert und die Abweichungen behoben oder gemäß dem Ausnahmeprozess dokumentiert.",
+      "Verweis": "RB-21",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 90,
+      "Name": "Systematische Log-Auswertung - Konzept",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen sind gemäß SA-01 dokumentiert, kommuniziert und bereitgestellt, um Ereignisse auf allen Assets, die zur Entwicklung oder zum Betrieb der kritischen Dienstleistung verwendet werden, zu protokollieren und an zentraler Stelle aufzubewahren. Die Protokollierung umfasst definierte Ereignisse, welche die Sicherheit und Verfügbarkeit der kritischen Dienstleistung beeinträchtigen können, einschließlich einer Protokollierung des Aktivierens, Stoppens und Pausierens der verschiedenen Protokollierungen. Die Protokolle werden bei unerwarteten oder auffälligen Ereignissen durch autorisiertes Personal anlassbezogen überprüft, um eine zeitnahe Untersu-chung von Störungen und Sicherheitsvorfällen sowie das Einleiten geeigne-ter Maßnahmen zu ermöglichen. Ergänzende Informationen zur Basisanforderung Sicherheitsrelevante Ereignisse sind u. a. e An- und Abmeldevorgänge e Erstellung, Änderung oder Löschung von Benutzern und Erweiterung der Berechtigungen e Verwendung, Erweiterung und Änderungen von privilegierten Zugriffs-berechtigungen e Nutzung von temporären Berechtigungen. Da es sich bei den protokollierten Daten i. d. R. um personenbezogene Daten handelt, sind in dem Fall datenschutzrechtliche Anforderungen an die Auf-bewahrung zu beachten und zu überprüfen. Erfahrungsgemäß sollte eine Frist von einem Jahr nicht überschritten werden.",
+      "Verweis": "RB-10, RB-14",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 91,
+      "Name": "Systematische Log-Auswertung - kritische Assets",
+      "Beschreibung": "Der KRITIS-Betreiber führt eine Liste aller protokollierungs- und überwachungskritischen Assets und überprüft diese Liste regelmäßig auf deren Aktualität und Korrektheit. Für diese kritischen Assets wurden Protokollierungs- und Überwachungsmaßnahmen definiert.",
+      "Verweis": "RB-12",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 92,
+      "Name": "Systematische Log-Auswertung - Aufbewahrung",
+      "Beschreibung": "Die erstellten Protokolle werden auf zentralen Protokollierungsservern aufbewahrt, wo sie vor unautorisierten Zugriffen und Veränderungen geschützt sind. Protokolldaten sind unverzüglich zu löschen, wenn sie zur Erreichung des Zwecks nicht mehr erforderlich sind. Zwischen den Protokollierungsservern und den protokollierten Assets erfolgt eine Authentifizierung, um die Integrität und Authentizität der übertragenen und gespeicherten Informationen zu schützen. Die Übertragung erfolgt nach einer dem Stand der Technik entsprechenden Verschlüsselung oder über ein eigenes Administrationsnetz (Out-of-Band-Management).",
+      "Verweis": "RB-13",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 93,
+      "Name": "Systematische Log-Auswertung - Konfiguration",
+      "Beschreibung": "Der Zugriff und die Verwaltung der Protokollierungs- und Überwachungsfunktionen sind beschränkt auf ausgewählte und autorisierte Mitarbeiter des KRITIS-Betreibers. Änderungen der Protokollierungen und Überwachungen werden vorab durch unabhängige und autorisierte Mitarbeiter überprüft und freigegeben. Der Zugriff und die Verwaltung der Protokollierungs- und Überwachungsfunktionen erfordern eine Multi-Faktor-Authentifizierung.",
+      "Verweis": "RB-15",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 94,
+      "Name": "Systematische Log-Auswertung - Verfügbarkeit",
+      "Beschreibung": "Die Verfügbarkeit der Protokollierungs- und Überwachungssoftware wird unabhängig überwacht. Bei einem Ausfall der Protokollierungs- und Überwachungssoftware werden die verantwortlichen Mitarbeiter umgehend informiert. Die Protokollierungs- und Überwachungssoftware ist redundant vorhanden, um auch bei Ausfällen die Sicherheit und Verfügbarkeit der Systeme der kritischen Dienstleistung zu überwachen.",
+      "Verweis": "RB-16",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 95,
+      "Name": "Penetrationstest",
+      "Beschreibung": "Der KRITIS-Betreiber lässt mindestens jährlich Penetrationstests durch qualifiziertes internes Personal oder externe Dienstleister durchführen. Die Penetrationstests erfolgen nach einer dokumentierten Testmethodik und umfassen die für den sicheren Betrieb der kritischen Dienstleistung als kritisch definierten Infrastruktur-Komponenten, die im Rahmen einer Risiko-Analyse als solche identifiziert wurden. Art, Umfang, Zeitpunkt/Zeitraum und Ergebnisse werden für einen sachverständigen Dritten nachvollziehbar dokumentiert. Feststellungen aus den Penetrationstests werden bewertet und mindestens bei mittlerer bis sehr hoher Kritikalität in Bezug auf die Vertraulichkeit, Integrität oder Verfügbarkeit der kritischen Dienstleistung nachverfolgt und behoben. Die Einschätzung der Kritikalität und der mitigierenden Maßnahmen zu den einzelnen Feststellungen werden dokumentiert.",
+      "Verweis": "RB-18",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 96,
+      "Name": "Umgang mit Schwachstellen, Störungen und Fehlern - Integration mit Änderungs- und Incident-Management",
+      "Beschreibung": "Richtlinien und Anweisungen mit technischen und organisatorischen Maßnahmen für den Umgang mit kritischen Schwachstellen sind gemäß SA-01 dokumentiert, kommuniziert und bereitgestellt. Die Maßnahmen sind mit den Aktivitäten des Änderungsverfahrens (Change Management) und der Störungs- und Fehlerbehebung (Incident Management) abgestimmt.",
+      "Verweis": "RB-19",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 101.1,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Basierend auf den Ergebnissen der Risikoanalyse und in Anbetracht der kritischen Prozesse des Betreibers, SOLLTE bei der Planung der Protokollie-rung eine Priorisierung der zu erschließenden Datenquellen vorgenommen werden, um zügig eine angemessene Sichtbarkeit (siehe Glossar) zu erzielen.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 101.2,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Der Betreiber MUSS alle zur wirksamen Angriffserkennung notwendi-gen Protokoll- und Protokollierungsdaten (siehe Glossar gemäß § 2 Absatz 8 und 8a BSIG) erheben, speichern und für die Auswertung bereitstellen, um SRE erkennen und bewerten zu können.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 101.3,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Hierzu KÖNNEN zusätzliche Systeme eingesetzt werden, sodass zur wirksamen Angriffserkennung nicht jedes einzelne Gerät Protokollierungs-daten aufzeichnen muss und damit die Verfügbarkeit der Produktivsysteme und damit der kritischen Dienstleistung gewährleistet werden kann.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG5"
+    },
+	{
+      "Anforderungsnummer": 101.4,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Die zur Speicherung notwendigen Systeme und deren IT-Sicherheits-vorkehrungen MÜSSEN schon in der Planung bedacht werden. Da die Proto-kollierung teilweise auch datenschutzrechtlich relevante und/oder dem Fern-meldegeheimnis unterliegende Datensätze beinhalten kann, MUSS der legale Umgang mit diesen bei der Planung einbezogen werden. Gesetzlich vorge-schriebene Lösch- bzw. Speicherfristen MÜSSEN eingehalten werden. Daher kann eine Anonymisierung bzw. Pseudonymisierung betroffener Protokoll- und Protokollierungsdaten erforderlich sein. Nicht anonymisierte bzw. nicht pseudonymisierte Daten sind entsprechend der gesetzlichen Vorgaben zu lö-schen. Im Rahmen der Planung MÜSSEN alle Systeme identifiziert werden, die zur Aufrechterhaltung der kritischen Dienstleistung maßgeblich sind, da-mit alle relevanten Protokoll- und Protokollierungsdaten erfasst werden kön-nen.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 101.5,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Sind die bestehenden Systeme nicht in der Lage, die erforderlichen Pro-tokoll- und Protokollierungsdaten bereitzustellen, um Detektion und Reak-tion gemäß der Risikoanalyse im notwendigen Rahmen zu ermöglichen, SOLLTE die Protokollierungsinfrastruktur entsprechend angepasst und/oder durch zusätzliche Maßnahmen, Software oder Systeme ergänzt werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 101.6,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Das anfallende Protokoll- und Protokollierungsdatenaufkommen KANN (und wird dringend empfohlen) anhand eines repräsentativen Systems pro Systemgruppe bestimmt werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG5"
+    },
+	{
+      "Anforderungsnummer": 101.7,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Die Ergebnisse der Planungsphase MÜSSEN in einer geeigneten Form dokumentiert werden. Die Dokumentation MUSS alle Netzbereiche, die Pro-tokoll- und Protokollierungsdatenquellen, deren Beziehungen untereinander und den Datenfluss der Protokoll- und Protokollierungsdaten im Anwen-dungsbereich umfassen. Hierbei ist ein angemessener Abstraktions- und De-tailgrad zu wählen, sodass der effektive Einsatz von SzA bewertet werden kann und die Dokumentation nur bei signifikanten Änderungen angepasst werden muss.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 101.8,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Um dies zu unterstützen, SOLLTE insbesondere eine Gruppierung glei-cher Systemgruppen innerhalb der Dokumentation erfolgen. Gleiche bzw. sehr ähnliche Netze (beispielsweise verschiedene Standorte mit gleichem Netzaufbau) können zusammengefasst werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 101.9,
+      "Name": "Planung der Protokollierung",
+      "Beschreibung": "Darüber hinaus MUSS für jedes System bzw. für jede Systemgruppe do-kumentiert werden, welche Ereignisse dieses bzw. diese protokolliert. Es MUSS ein Prozess eingerichtet werden, der sicherstellt, dass die Protokollie-rung bei Veränderungen im Anwendungsbereich (Changes) entsprechend an-gepasst wird.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 102.1,
+      "Name": "Erstellung einer Sicherheitsrichtlinie für die Protokollierung",
+      "Beschreibung": "Ausgehend von der allgemeinen Sicherheitsrichtlinie der Institution MUSS eine spezifische Sicherheitsrichtlinie für die Protokollierung erstellt werden. In dieser Sicherheitsrichtlinie MÜSSEN nachvollziehbar Anforderungen und Vorgaben beschrieben sein, wie die Protokollierung zu planen, aufzubauen und sicher zu betreiben ist.",
+      "Verweis": "SIM-01, BSI OH SzA, OPS.1.1.5A1",
+      "Umsetzungsgrad": "UG3"
+    },
+	 {
+      "Anforderungsnummer": 102.2,
+      "Name": "Erstellung einer Sicherheitsrichtlinie für die Protokollierung",
+      "Beschreibung": "Dabei SOLLTEN sich Art und Umfang der Protokollierung am Schutz-bedarf der Informationen orientieren.",
+      "Verweis": "SIM-01, BSI OH SzA, OPS.1.1.5A1",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 102.3,
+      "Name": "Erstellung einer Sicherheitsrichtlinie für die Protokollierung",
+      "Beschreibung": "Die spezifische Sicherheitsrichtlinie MUSS von dem oder der ISB ge-meinsam mit den Fachverantwortlichen erstellt werden. Sie MUSS allen für die Protokollierung zuständigen Mitarbeitenden bekannt und grundlegend für ihre Arbeit sein. Wird die spezifische Sicherheitsrichtlinie verändert oder wird von den Anforderungen abgewichen, MUSS dies mit dem oder der ISB abgestimmt und dokumentiert werden. Es MUSS regelmäßig überprüft wer-den, ob die spezifische Sicherheitsrichtlinie noch korrekt umgesetzt ist. Die Ergebnisse der Überprüfung MÜSSEN dokumentiert werden.",
+      "Verweis": "SIM-01, BSI OH SzA, OPS.1.1.5A1",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 103.1,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Alle sicherheitsrelevanten Ereignisse von IT-Systemen und Anwendungen MÜSSEN protokolliert werden. Sofern die in der Protokollierungs-richtlinie als relevant definierten IT-Systeme und Anwendungen über eine Protokollierungsfunktion verfügen, MUSS diese benutzt werden. Wenn die Protokollierung eingerichtet wird, MÜSSEN dabei die Vorgaben des herstel-lenden Unternehmens für die jeweiligen IT-Systeme oder Anwendungen be-achtet werden. In angemessenen Intervallen MUSS stichpunktartig über-prüft werden, ob die Protokollierung noch korrekt funktioniert. Die Prüfin-tervalle MÜSSEN in der Protokollierungsrichtlinie definiert werden. Falls be-triebs- und sicherheitsrelevante Ereignisse nicht auf einem IT-System proto-kolliert werden können, MÜSSEN zusätzliche IT-Systeme zur Protokollie-rung (z. B. von Ereignissen auf Netzebene) integriert werden.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 103.2,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Die Systemzeit aller protokollierenden IT-Systeme und Anwendungen MUSS immer synchron sein. Es MUSS sichergestellt sein, dass das Datums- und Zeitformat der Protokolldateien einheitlich ist.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 103.3,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Bei der Protokollierung MÜSSEN die Bestimmungen aus den aktuel-len Gesetzen zum Bundes-sowie Landesdatenschutz eingehalten werden (siehe CON.2 Datenschutz). Darüber hinaus MÜSSEN eventuelle Persönlich-keitsrechte bzw. Mitbestimmungsrechte der Mitarbeitendenvertretungen gewahrt werden. Ebenso MUSS sichergestellt sein, dass alle weiteren relevan-ten gesetzlichen Bestimmungen beachtet werden. Protokollierungsdaten MÜSSEN nach einem festgelegten Prozess gelöscht werden. Es MUSS tech-nisch unterbunden werden, dass Protokollierungsdaten unkontrolliert ge-löscht oder verändert werden.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 103.4,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Alle gesammelten sicherheitsrelevanten Protokoll- und Protokollie-rungsdaten MÜSSEN an für den jeweiligen Netzbereich zentralen Stellen ge-speichert werden.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 103.5,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Die Zahl an zentralen Stellen zur Speicherung SOLLTE möglichst ge-ringgehalten werden und sich mindestens an funktionalen Einheiten orien-tieren, sodass der Zugriff auf die gespeicherten Daten einfach erfolgen kann.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 103.6,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Die Protokollierungsinfrastruktur MUSS dazu ausreichend dimensio-niert sein. Dafür MÜSSEN genügend technische, finanzielle und personelle Ressourcen verfügbar sein.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 103.7,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Die gesammelten Protokoll- und Protokollierungsdaten MÜSSEN ge-filtert, normalisiert, aggregiert und korreliert werden. Die so bearbeiteten Protokoll- und Protokollierungsdaten MÜSSEN geeignet verfügbar gemacht werden, damit sie ausgewertet werden können.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 103.8,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Eine zeitlich befristete Speicherung der unbearbeiteten Protokolldaten KANN den Detektionsprozess zusätzlich unterstützen.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG5"
+    },
+	{
+      "Anforderungsnummer": 103.9,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Für die Erzielung einer angemessenen Sichtbarkeit von Angriffen SOLLTEN die Protokollierungsdatenquellen auf Netzebene von außen (Netz-grenzen) nach innen (Netzbereiche) erschlossen werden. Die Systemebene (kritische Anwendungen und Applikationen) SOLLTE ausgehend von den zentralen, kritischen Systemen, wie z. B. Prozessleit- und Automatisierungs-technik und Leitsystemen, erschlossen werden. Die Priorisierung zur Aus-wahl der Protokollierungsdatenquellen SOLLTE ausgehend von der Kritika-lität der Systeme abgeleitet werden.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 103.10,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Nach erfolgreicher Umsetzung der Protokollierung MUSS geprüft werden, ob alle geplanten Protokollierungsdatenquellen gemäß der Planung umgesetzt wurden.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 103.11,
+      "Name": "Protokollierung auf System- und Netzebene",
+      "Beschreibung": "Sollten branchenspezifisch weitergehende gesetzliche oder regulato-rische Anforderungen an die Protokollierung bestehen, so MÜSSEN diese ebenfalls entsprechend umgesetzt werden.",
+      "Verweis": "BSI OH SzA, OPS.1.1.5A3 -A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 104.1,
+      "Name": "Planung der Detektion",
+      "Beschreibung": "Bei der Auswahl und dem Einsatz von Detektionsmaßnahmen MUSS eine umfassende und effiziente Abdeckung der Bedrohungslandschaft erzielt werden. Dazu MUSSEN die Ergebnisse der Risikoanalyse sowie die Größe und Struktur des Unternehmens in der Planung einbezogen werden. ",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 104.2,
+      "Name": "Planung der Detektion",
+      "Beschreibung": "Zur Bestimmung der Abdeckung KANN (und es wird empfohlen) eine standardisierte Methode angewendet werden (z. B. MITRE ATT&CK bzw. ATT&CK for ICS). In Abhängigkeit der Unternehmensgröße und der Bedrohungslandschaft KANN eine separate Betrachtung von Detektionsmaßnahmen für die IT- und OT-Umgebung erforderlich sein.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 105.1,
+      "Name": "Erstellung einer Sicherheitsrichtlinie für die Detektion von sicherheitsrelevanten Ereignissen",
+      "Beschreibung": "Ausgehend von der allgemeinen Sicherheitsrichtlinie der Institution MUSS eine spezifische Sicherheitsrichtlinie für die Detektion von sicherheitsrelevanten Ereignissen erstellt werden. In der spezifischen Sicherheitsrichtlinie MÜSSEN nachvollziehbar Anforderungen und Vorgaben beschrieben sein, wie die Detektion von sicherheitsrelevanten Ereignissen geplant, aufgebaut und sicher betrieben werden kann. Die spezifische Sicherheitsrichtlinie MUSS allen im Bereich Detektion zuständigen Mitarbeitenden bekannt und grundlegend für ihre Arbeit sein. Wird die spezifische Sicherheitsrichtlinie verändert oder wird von den Anforderungen abgewichen, MUSS dies mit dem oder der verantwortlichen ISB abgestimmt und dokumentiert werden.",
+      "Verweis": "BSI OH SzA, DER.1.A1",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 105.2,
+      "Name": "Erstellung einer Sicherheitsrichtlinie für die Detektion von sicherheitsrelevanten Ereignissen",
+      "Beschreibung": "Es MUSS regelmäßig überprüft werden, ob die spezifische Sicherheitsrichtlinie noch korrekt umgesetzt ist. Die Ergebnisse der Überprüfung MÜS-SEN sinnvoll dokumentiert werden.",
+      "Verweis": "BSI OH SzA, DER.1.A1",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 106,
+      "Name": "Einhaltung rechtlicher Bedingungen bei der Auswertung von Protokollierungsdaten",
+      "Beschreibung": "Wenn Protokollierungsdaten ausgewertet werden, dann MUSSEN dabei die Bestimmungen aus den aktuellen Gesetzen zum Bundes- und Landesdatenschutz eingehalten werden. Wenn Detektionssysteme eingesetzt werden, dann MUSSEN die Persönlichkeitsrechte bzw. Mitbestimmungsrechte der Mitarbeitendenvertretungen gewahrt werden. Ebenso MUSS sichergestellt sein, dass alle weiteren relevanten gesetzlichen Bestimmungen beachtet werden, z. B. das Telemediengesetz (TMG), das Betriebsverfassungsgesetz und das Telekommunikationsgesetz.",
+      "Verweis": "BSI OH SzA, DER.1.A2",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 107.1,
+      "Name": "Festlegung von Meldewegen für sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Für sicherheitsrelevante Ereignisse MÜSSEN geeignete Melde- und Alarmierungswege festgelegt und dokumentiert werden. Es MUSS bestimmt werden, welche Stellen wann zu informieren sind. Es MUSS aufgeführt sein, wie die jeweiligen Personen erreicht werden können. Je nach Dringlichkeit MUSS ein sicherheitsrelevantes Ereignis über verschiedene Kommunikati-onswege gemeldet werden.",
+      "Verweis": "BSI OH SzA, DER.1.A3",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 107.2,
+      "Name": "Festlegung von Meldewegen für sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Alle Personen, die für die Meldung bzw. Alarmierung relevant sind, MÜSSEN über ihre Aufgaben informiert sein. Alle Schritte des Melde- und Alarmierungsprozesses MÜSSEN ausführlich beschrieben sein.",
+      "Verweis": "BSI OH SzA, DER.1.A3",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 107.3,
+      "Name": "Festlegung von Meldewegen für sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Die eingerichteten Melde- und Alarmierungswege SOLLTEN regelmä-ßig geprüft, erprobt und aktualisiert werden, falls erforderlich.",
+      "Verweis": "BSI OH SzA, DER.1.A3",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 108,
+      "Name": "Sensibilisierung der Mitarbeitenden",
+      "Beschreibung": "Alle Benutzenden MUSSEN dahingehend sensibilisiert werden, dass sie Ereignismeldungen ihrer Clients nicht einfach ignorieren oder schleifen lassen. Sie MUSSEN die Meldungen entsprechend der Alarmierungswege an das verantwortliche Incident Management weitergeben. Alle Mitarbeitenden MUSSEN einen von ihnen erkannten Sicherheitsvorfall unverzüglich dem Incident Management melden.",
+      "Verweis": "BSI OH SzA, DER.1.A4",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 109,
+      "Name": "Einsatz von mitgelieferten Systemfunktionen zur Detektion [Fachverantwortliche]",
+      "Beschreibung": "Falls eingesetzte IT-Systeme oder Anwendungen über Funktionen verfügen, mit denen sich sicherheitsrelevante Ereignisse detektieren lassen, dann MÜSSEN diese aktiviert und benutzt werden. Falls ein sicherheitsrele-vanter Vorfall vorliegt, dann MÜSSEN die Meldungen der betroffenen IT-Systeme ausgewertet werden. Zusätzlich MÜSSEN die protokollierten Ereignisse anderer IT-Systeme überprüft werden.",
+      "Verweis": "BSI OH SzA, DER.1.A5",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 109,
+      "Name": "Einsatz von mitgelieferten Systemfunktionen zur Detektion [Fachverantwortliche]",
+      "Beschreibung": "Auch SOLLTEN die gesammelten Meldungen in verbindlich festgeleg-ten Zeiträumen stichpunktartig kontrolliert werden.",
+      "Verweis": "BSI OH SzA, DER.1.A5",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 109,
+      "Name": "Einsatz von mitgelieferten Systemfunktionen zur Detektion [Fachverantwortliche]",
+      "Beschreibung": "Es MUSS geprüft werden, ob zusätzliche Schadcodescanner auf zentra-len IT-Systemen installiert werden sollen. Falls zusätzliche Schadcodescan-ner eingesetzt werden, dann MÜSSEN diese es über einen zentralen Zugriff ermöglichen, ihre Meldungen und Protokolle auszuwerten. Es MUSS sicher-gestellt sein, dass die Schadcodescanner sicherheitsrelevante Ereignisse auto-matisch an die Zuständigen melden. Die Zuständigen MÜSSEN die Meldun-gen auswerten und untersuchen.",
+      "Verweis": "BSI OH SzA, DER.1.A5",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 110.1,
+      "Name": "Kontinuierliche Überwachung und Auswertung von Protokoll- und Protokollierungsdaten",
+      "Beschreibung": "Alle Protokoll- und Protokollierungsdaten MÜSSEN kontinuierlich überwacht und ausgewertet werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 110.2,
+      "Name": "Kontinuierliche Überwachung und Auswertung von Protokoll- und Protokollierungsdaten",
+      "Beschreibung": "Dies KANN automatisiert werden, wenn bei relevanten Ereignissen eine unmittelbare Alarmierung der Verantwortlichen gewährleistet ist.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG5"
+    },
+    {
+      "Anforderungsnummer": 110.3,
+      "Name": "Kontinuierliche Überwachung und Auswertung von Protokoll- und Protokollierungsdaten",
+      "Beschreibung": "Die Prüfung des Ereignisses und ggf. die Reaktion MUSS innerhalb ei-ner der Risikoanalyse entsprechend geringen Zeitspanne erfolgen. Es MÜS-SEN Mitarbeitende bzw. Mitarbeitende von Dienstleistern benannt werden, die dafür zuständig sind. Müssen die verantwortlichen Mitarbeitenden aktiv nach SRE suchen, z.B. wenn sie IT-Systeme kontrollieren oder testen, MÜS-SEN solche Aufgaben in entsprechenden Verfahrensanleitungen dokumen-tiert sein. Für die Detektion von SRE MÜSSEN genügend personelle Ressour-cen bereitgestellt werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 111,
+      "Name": "Einsatz zusätzlicher Detektionssysteme",
+      "Beschreibung": "Es MUSSEN Schadcodedetektionssysteme eingesetzt und zentral verwaltet werden. Anhand des Netzplans MUSS festgelegt werden, welche Netzsegmente durch zusätzliche Detektionssysteme geschützt werden müssen. Insbesondere MUSSEN die im Netzplan definierten Übergänge zwischen internen und externen Netzen um netzbasierte Intrusion Detection Systeme (NIDS) ergänzt werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 112,
+      "Name": "Infrastruktur zur Auswertung von Protokoll- und Protokollierungsdaten und Prüfung sicherheitsrelevanter Ereignisse",
+      "Beschreibung": "Damit die Protokoll- und Protokollierungsdaten korreliert und abgeglichen werden können, SOLLTEN sie alle zeitlich synchronisiert werden. Die gesammelten Ereignismeldungen MUSSEN regelmäßig auf Auffälligkeiten kontrolliert werden. Damit SRE auch nachträglich erkannt werden können, MUSSEN die Signaturen der Detektionssysteme immer auf aktuellstem Stand gehalten werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 113,
+      "Name": "Auswertung von Informationen aus externen Quellen",
+      "Beschreibung": "Um neue Erkenntnisse über SRE für den eigenen Informationsverbund zu gewinnen, MUSSEN externe Quellen herangezogen werden. Da Meldungen über unterschiedliche Kanäle in eine Institution gelangen, MUSS sichergestellt sein, dass diese Meldungen von den Mitarbeitenden auch als relevant erkannt und an die richtige Stelle weitergeleitet werden. Informationen aus zuverlässigen Quellen MUSSEN grundsätzlich ausgewertet werden. Alle gelieferten Informationen MUSSEN danach bewertet werden, ob sie relevant für den eigenen Informationsverbund sind. Ist dies der Fall, MUSSEN die Informationen entsprechend der Sicherheitsvorfallbehandlung eskaliert werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 114.1,
+      "Name": "Auswertung der Protokoll- und Protokollierungsdaten durch spezialisiertes Personal",
+      "Beschreibung": "Es MÜSSEN Mitarbeitende bzw. Mitarbeitende von Dienstleistern speziell damit beauftragt werden, alle Protokoll- und Protokollierungsdaten auszuwerten.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 114.2,
+      "Name": "Auswertung der Protokoll- und Protokollierungsdaten durch spezialisiertes Personal",
+      "Beschreibung": "Die Auswertung der Protokoll- und Protokollierungsdaten SOLLTE bei diesen höher priorisiert sein, als ihre übrigen Aufgaben. Daher empfiehlt es sich, dass dies ihre überwiegende Aufgabe ist. Dieses Personal SOLLTE spezialisierte weiterführende Schulungen und Qualifikationen erhalten.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 114.3,
+      "Name": "Auswertung der Protokoll- und Protokollierungsdaten durch spezialisiertes Personal",
+      "Beschreibung": "Ein Personenkreis MUSS benannt werden, der für das Thema Auswertung von Protokoll- und Protokollierungsdaten verantwortlich ist.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 115,
+      "Name": "Zentrale Detektion und Echtzeitüberprüfungen von Ereignismeldungen",
+      "Beschreibung": "Es MÜSSEN zentrale Komponenten eingesetzt werden, um SRE zu erkennen und auszuwerten. Zentrale automatisierte Analysen mit Softwaremitteln MÜSSEN dazu eingesetzt werden, um alle in der Systemumgebung anfallen-den Protokoll- und Protokollierungsdaten aufzuzeichnen, in Bezug zueinan-der zu setzen und sicherheitsrelevante Vorgänge sichtbar zu machen. Alle eingelieferten Protokoll- und Protokollierungsdaten MÜSSEN lückenlos in der Protokollverwaltung einsehbar und auswertbar sein. Die Daten MÜSSEN kontinuierlich ausgewertet werden.Werden definierte Schwellenwerte überschritten, MUSS automatisch alar-miert werden. Das zuständige Personal MUSS sicherstellen, dass bei einem Alarm nach fachlicher Bewertung und innerhalb einer der Risikoanalyse entsprechend geringen Zeitspanne eine qualifizierte und dem Bedarf ent-sprechende Reaktion eingeleitet wird.Die Systemverantwortlichen MÜSSEN regelmäßig die Analyseparameter au-ditieren und anpassen, falls dies erforderlich ist. Zusätzlich MÜSSEN bereits überprüfte Protokoll- und Protokollierungsdaten regelmäßig hinsichtlich SRE automatisch untersucht werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 116.1,
+      "Name": "Qualifizierung von sicherheitsrelevanten Ereignissen",
+      "Beschreibung": "Als eine zentrale Grundvoraussetzung für die effektive Detektion MÜSSEN zudem Informationen zu aktuellen Angriffsmustern für technische Vulnerabilitäten fortlaufend für die im Anwendungsbereich eingesetzten Systeme eingeholt werden. Dazu MÜSSEN fortlaufend Meldungen der Her-steller (Hard- und Software), von Behörden, den Medien und weiterer rele-vanter Stellen geprüft werden und in dokumentierte Prozesse des Schwach-stellenmanagements einfließen.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 116.2,
+      "Name": "Qualifizierung von sicherheitsrelevanten Ereignissen",
+      "Beschreibung": "Bei der Umsetzung von Detektionsmechanismen SOLLTE initial eine Kalibrierung durchgeführt werden, um festzustellen, welche SRE und Daten-flüsse im Normalzustand bzw. –betrieb auftreten (Baselining). Im Folgenden SOLLTE bewertet werden, ob bei der Kalibrierung auftretende Meldungen auf potenzielle Schwachstellen hindeuten, die Anpassungen an den betroffe-nen IT-Systemen erfordern und ob die so konfiguriert und kalibrierten De-tektoren und Detektionssysteme im Normalzustand bzw. –betrieb eine ver-tretbare Zahl an falsch positiven Meldungen erzeugen oder ob Änderungen an den Detektionsparametern vorzunehmen sind. Die Kalibrierung SOLLTE bei Änderungen innerhalb des Anwendungsbereichs oder der Bedrohungs-lage erneut durchgeführt werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 116.3,
+      "Name": "Qualifizierung von sicherheitsrelevanten Ereignissen",
+      "Beschreibung": "Auftretende SRE MÜSSEN überprüft und dahingehend bewertet wer-den, ob sie auf einen Sicherheitsvorfall (qualifizierter SRE) hindeuten. Die zur Angriffserkennung eingesetzten Systeme sollten, in eindeutig zuordenbaren Fällen, eine automatisierte Qualifizierung der SRE ermöglichen.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 116.4,
+      "Name": "Qualifizierung von sicherheitsrelevanten Ereignissen",
+      "Beschreibung": "Nur qualifizierte SRE SOLLTEN den Prozess der Reaktion auslösen. Die Qualifizierung SOLLTE in automatisiert nicht eindeutig zuordenbaren Fällen manuell durch festgelegte Verantwortliche vorgenommen werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 116.5,
+      "Name": "Qualifizierung von sicherheitsrelevanten Ereignissen",
+      "Beschreibung": "Basierend auf den gewonnenen Erkenntnissen der Qualifizierung MÜSSEN die Detektionsmechanismen nachjustiert werden. Sollten bran-chenspezifisch weitergehende gesetzliche oder regulatorische Anforderungen bestehen, so MÜSSEN diese ebenfalls entsprechend umgesetzt werden.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 117.1,
+      "Name": "Definition eines Sicherheitsvorfalls",
+      "Beschreibung": "In einer Institution MUSS klar definiert sein, was ein Sicherheitsvorfall ist. Ein Sicherheitsvorfall MUSS so weit wie möglich von Störungen im Tagesbetrieb abgegrenzt sein. Alle an der Behandlung von Sicherheitsvorfällen beteiligten Mitarbeitenden MUSSEN die Definition eines Sicherheitsvorfalls kennen. ",
+      "Verweis": "BSI OH SzA, DER.2.1.A1",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 117.2,
+      "Name": "Definition eines Sicherheitsvorfalls",
+      "Beschreibung": "Die Definition und die Eintrittsschwellen eines solchen Vorfalls SOLLTEN sich nach dem Schutzbedarf der betroffenen Geschäftsprozesse, IT-Systeme bzw. Anwendungen richten.",
+      "Verweis": "BSI OH SzA, DER.2.1.A1",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 118.1,
+      "Name": "Erstellung einer Richtlinie zur Behandlung von Sicherheitsvorfällen",
+      "Beschreibung": "Eine Richtlinie zur Behandlung von Sicherheitsvorfällen MUSS erstellt werden. Darin MÜSSEN Zweck und Ziel der Richtlinie definiert sowie alle Aspekte der Behandlung von Sicherheitsvorfällen geregelt werden. So MÜS-SEN Verhaltensregeln für die verschiedenen Arten von Sicherheitsvorfällen beschrieben sein. Zusätzlich MUSS es für alle Mitarbeitenden zielgruppen-orientierte und praktisch anwendbare Handlungsanweisungen geben.",
+      "Verweis": "BSI OH SzA, DER.2.1.A2",
+      "Umsetzungsgrad": "UG3"
+    },
+	    {
+      "Anforderungsnummer": 118.2,
+      "Name": "Erstellung einer Richtlinie zur Behandlung von Sicherheitsvorfällen",
+      "Beschreibung": "Weiterhin SOLLTEN die Schnittstellen zu anderen Managementberei-chen berücksichtigt werden, z.B. zum Notfallmanagement.",
+      "Verweis": "BSI OH SzA, DER.2.1.A2",
+      "Umsetzungsgrad": "UG4"
+    },
+	    {
+      "Anforderungsnummer": 118.3,
+      "Name": "Erstellung einer Richtlinie zur Behandlung von Sicherheitsvorfällen",
+      "Beschreibung": "Die Richtlinie MUSS allen Mitarbeitenden bekannt sein. Sie MUSS mit dem IT-Betrieb abgestimmt und durch die Institutionsleitung verabschiedet sein. Die Richtlinie MUSS regelmäßig geprüft und aktualisiert werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A2",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 119,
+      "Name": "Festlegung von Verantwortlichkeiten und Ansprechpersonen bei Sicherheitsvorfällen",
+      "Beschreibung": "Es MUSS geregelt werden, wer bei Sicherheitsvorfällen wofür verantwortlich ist. Für alle Mitarbeitenden MUSSEN die Aufgaben und Kompetenzen bei Sicherheitsvorfällen festgelegt werden. Insbesondere Mitarbeitende, die Sicherheitsvorfälle bearbeiten sollen, MUSSEN über ihre Aufgaben und Kompetenzen unterrichtet werden. Dabei MUSS auch geregelt sein, wer die mögliche Entscheidung für eine forensische Untersuchung trifft, nach welchen Kriterien diese vorgenommen wird und wann sie erfolgen soll. Die Ansprechpartner oder Ansprechpartnerinnen für alle Arten von Sicherheitsvorfällen MUSSEN den Mitarbeitenden bekannt sein. Kontaktinformationen MUSSEN immer aktuell und leicht zugänglich sein.",
+      "Verweis": "BSI OH SzA, DER.2.1.A3",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 120,
+      "Name": "Benachrichtigung betroffener Stellen bei Sicherheitsvorfällen [Institutionsleitung, IT-Betrieb, Datenschutzbeauf-tragte, Notfallbeauftragte]",
+      "Beschreibung": "Von einem Sicherheitsvorfall MUSSEN alle betroffenen internen und externen Stellen zeitnah informiert werden. Dabei MUSS geprüft werden, ob der oder die Datenschutzbeauftragte, der Betriebs- und Personalrat sowie Mitarbeitende aus der Rechtsabteilung einbezogen werden müssen. Ebenso MUSS die Meldepflichten für Behörden und regulierte Branchen berücksichtigt werden. Außerdem MUSS gewährleistet sein, dass betroffene Stellen über die erforderlichen Maßnahmen informiert werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A4",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 121,
+      "Name": "Behebung von Sicherheitsvorfällen [IT-Betrieb]",
+      "Beschreibung": "Damit ein Sicherheitsvorfall erfolgreich behoben werden kann, MUSSEN die Zuständigen zunächst das Problem eingrenzen und die Ursache finden. Danach MUSSEN die erforderlichen Maßnahmen ausgewählt werden, um das Problem zu beheben. Die Leitung des IT-Betriebs MUSS eine Freigabe erteilen, bevor die Maßnahmen umgesetzt werden. Anschließend MUSS die Ursache beseitigt und ein sicherer Zustand hergestellt werden. Eine aktuelle Liste von internen und externen Sicherheitsfachleuten MUSS vorhanden sein, die bei Sicherheitsvorfällen für Fragen aus den erforderlichen Themenbereichen hinzugezogen werden können. Es MUSSEN sichere Kommunikationsverfahren mit diesen internen und externen Stellen etabliert werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A5",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 122.1,
+      "Name": "Wiederherstellung der Betriebsumgebung nach Sicherheitsvorfällen [IT-Betrieb]",
+      "Beschreibung": "Nach einem Sicherheitsvorfall MÜSSEN die betroffenen Komponen-ten vom Netz genommen werden. Zudem MÜSSEN alle erforderlichen Da-ten gesichert werden, die Aufschluss über die Art und Ursache des Problems geben könnten. Auf allen betroffenen Komponenten MÜSSEN das Betriebs-system und alle Applikationen auf Veränderungen untersucht werden. Die Originaldaten MÜSSEN von schreibgeschützten Datenträgern wieder eingespielt werden. Dabei MÜSSEN alle sicherheitsrelevanten Konfiguratio-nen und Patches mit aufgespielt werden. Wenn Daten aus Datensicherungen wieder eingespielt werden, MUSS sichergestellt sein, dass diese vom Sicher-heitsvorfall nicht betroffen waren. Nach einem Angriff MÜSSEN alle Zu-gangsdaten auf den betroffenen Komponenten geändert werden, bevor sie wieder in Betrieb genommen werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A6",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 122.2,
+      "Name": "Wiederherstellung der Betriebsumgebung nach Sicherheitsvorfällen [IT-Betrieb]",
+      "Beschreibung": "Die betroffenen Komponenten SOLLTEN einem Penetrationstest un-terzogen werden, bevor sie wieder eingesetzt werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A6",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 122.3,
+      "Name": "Wiederherstellung der Betriebsumgebung nach Sicherheitsvorfällen [IT-Betrieb]",
+      "Beschreibung": "Bei der Wiederherstellung der sicheren Betriebsumgebung MÜSSEN die Benutzenden in die Anwendungsfunktionstests einbezogen werden. Nachdem alles wiederhergestellt wurde, MÜSSEN die Komponenten inklu-sive der Netzübergänge gezielt überwacht werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A6",
+      "Umsetzungsgrad": "UG3"
+    },
+    {
+      "Anforderungsnummer": 123,
+      "Name": "Etablierung einer Vorgehensweise zur Behandlung von Sicherheitsvorfällen [Institutionsleitung]",
+      "Beschreibung": "Es SOLLTE eine geeignete Vorgehensweise zur Behandlung von Sicherheitsvorfällen definiert werden. Die Abläufe, Prozesse und Vorgaben für die verschiedenen Sicherheitsvorfälle SOLLTEN dabei eindeutig geregelt und geeignet dokumentiert werden. Die Institutionsleitung SOLLTE die festgelegte Vorgehensweise in Kraft setzen und allen Beteiligten zugänglich machen. Es SOLLTE regelmäßig überprüft werden, ob die Vorgehensweise noch aktuell und wirksam ist. Bei Bedarf SOLLTE die Vorgehensweise angepasst werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A7",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 124,
+      "Name": "Aufbau von Organisationsstrukturen zur Behandlung von Sicherheitsvorfällen",
+      "Beschreibung": "Für den Umgang mit Sicherheitsvorfällen SOLLTEN geeignete Organisationsstrukturen festgelegt werden. Es SOLLTE ein Sicherheitsvorfall-Team aufgebaut werden, dessen Mitglieder je nach Art des Vorfalls einberufen werden können. Auch wenn das Sicherheitsvorfall-Team nur für einen konkreten Fall zusammentritt, SOLLTEN bereits im Vorfeld geeignete Mitglieder benannt und in ihre Aufgaben eingewiesen sein. Es SOLLTE regelmäßig geprüft werden, ob die Zusammensetzung des Sicherheitsvorfall-Teams noch angemessen ist. Gegebenenfalls SOLLTE das Sicherheitsvorfall-Team neu zusammengestellt werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A8",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 125,
+      "Name": "Festlegung von Meldewegen für Sicherheitsvorfälle",
+      "Beschreibung": "Für die verschiedenen Arten von Sicherheitsvorfällen SOLLTEN die jeweils passenden Meldewege aufgebaut sein. Es SOLLTE dabei sichergestellt sein, dass Mitarbeitende Sicherheitsvorfälle über verlässliche und vertrauenswürdige Kanäle schnell und einfach melden können. Wird eine zentrale Anlaufstelle für die Meldung von Störungen oder Sicherheitsvorfällen eingerichtet, SOLLTE dies an alle Mitarbeitenden kommuniziert werden. Eine Kommunikations- und Kontaktstrategie SOLLTE vorliegen. Darin SOLLTE geregelt sein, wer grundsätzlich informiert werden muss und wer informiert werden darf, durch wen dies in welcher Reihenfolge erfolgt und in welcher Tiefe informiert wird. Es SOLLTE definiert sein, wer Infor-mationen über Sicherheitsvorfälle an Dritte weitergibt. Ebenso SOLLTE si-chergestellt sein, dass keine unautorisierten Personen Informationen über den Sicherheitsvorfall weitergeben.",
+      "Verweis": "BSI OH SzA, DER.2.1.A9",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 126,
+      "Name": "Eindammen der Auswirkungen von Sicherheitsvorfällen [Notfallbeauftragte, IT-Betrieb]",
+      "Beschreibung": "Parallel zur Ursachenanalyse eines Sicherheitsvorfalls SOLLTE entschieden werden, ob es wichtiger ist, den entstandenen Schaden einzudämmen oder den Vorfall aufzuklären. Um die Auswirkung eines Sicherheitsvorfalls abschätzen zu können, SOLLTEN ausreichend Informationen vorliegen. Für ausgewählte Sicherheitsvorfallszenarien SOLLTEN bereits im Vorfeld Worst-Case-Betrachtungen durchgeführt werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A10",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 127,
+      "Name": "Einstufung von Sicherheitsvorfällen [IT-Betrieb]",
+      "Beschreibung": "Ein einheitliches Verfahren SOLLTE festgelegt werden, um Sicherheitsvorfälle und Störungen einzustufen. Das Einstufungsverfahren für Sicherheitsvorfälle SOLLTE zwischen Sicherheitsmanagement und der Störungs- und Fehlerbehebung (Incident Management) abgestimmt sein.",
+      "Verweis": "BSI OH SzA, DER.2.1.A11",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 128,
+      "Name": "Festlegung der Schnittstellen der Sicherheitsvorfallbehandlung zur Störungs- und Fehlerbehebung [Notfallbeauftragte]",
+      "Beschreibung": "Die Schnittstellen zwischen Störungs- und Fehlerbehebung, Notfallmanagement und Sicherheitsmanagement SOLLTEN analysiert werden. Dabei SOLLTEN auch eventuell gemeinsam benutzbare Ressourcen identifiziert werden. Die bei der Störungs- und Fehlerbehebung beteiligten Mitarbeitenden SOLLTEN für die Behandlung von Sicherheitsvorfällen sowie für das Notfallmanagement sensibilisiert werden. Das Sicherheitsmanagement SOLLTE lesenden Zugriff auf eingesetzte Incident-Management-Werkzeuge haben.",
+      "Verweis": "BSI OH SzA, DER.2.1.A12",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 129,
+      "Name": "Einbindung in das Sicherheits- und Notfallmanagement [Notfallbeauftragte]",
+      "Beschreibung": "Die Behandlung von Sicherheitsvorfällen SOLLTE mit dem Notfallmanagement abgestimmt sein. Falls es in der Institution eine spezielle Rolle für Störungs- und Fehlerbehebung gibt, SOLLTE auch diese mit einbezogen werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A13",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 130,
+      "Name": "Eskalationsstrategie für Sicherheitsvorfälle [IT-Betrieb]",
+      "Beschreibung": "Über die Kommunikations- und Kontaktstrategie hinaus SOLLTE eine Eskalationsstrategie formuliert werden. Diese SOLLTE zwischen den Verantwortlichen für Störungs- und Fehlerbehebung und dem Informationssicherheitsmanagement abgestimmt werden. Die Eskalationsstrategie SOLLTE eindeutige Handlungsanweisungen enthalten, wer auf welchem Weg bei welcher Art von erkennbaren oder vermuteten Sicherheitsstörungen wann einzubeziehen ist. Es SOLLTE geregelt sein, zu welchen Maßnahmen eine Eskalation führt und wie reagiert werden soll. Für die festgelegte Eskalationsstrategie SOLLTEN geeignete Werkzeuge wie z. B. Ticket-Systeme ausgewählt werden. Diese SOLLTEN sich auch dafür eignen, vertrauliche Informationen zu verarbeiten. Es SOLLTE sichergestellt sein, dass die Werkzeuge auch während eines Sicherheitsvorfalls bzw. Notfalls verfügbar sind. Die Eskalationsstrategie SOLLTE regelmäßig überprüft und gegebenenfalls aktualisiert werden. Die Checklisten (Matching-Szenarien) für Störungs- und Fehlerbehebung SOLLTEN regelmäßig um sicherheitsrelevante Themen ergänzt bzw. aktualisiert werden. Die festgelegten Eskalationswege SOLLTEN in Übungen erprobt werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A14",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 131,
+      "Name": "Schulung der Mitarbeitenden des Service Desks [IT-Betrieb]",
+      "Beschreibung": "Dem Personal des Service Desks SOLLTEN geeignete Hilfsmittel zur Verfügung stehen, damit sie Sicherheitsvorfälle erkennen können. Sie SOLLTEN ausreichend geschult sein, um die Hilfsmittel selbst anwenden zu können. Die Mitarbeitenden des Service Desks SOLLTEN den Schutzbedarf der betroffenen IT-Systeme kennen.",
+      "Verweis": "BSI OH SzA, DER.2.1.A15",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 132,
+      "Name": "Dokumentation der Behebung von Sicherheitsvorfällen",
+      "Beschreibung": "Die Behebung von Sicherheitsvorfällen SOLLTE nach einem standardisierten Verfahren dokumentiert werden. Es SOLLTEN alle durchgeführten Aktionen einschließlich der Zeitpunkte sowie die Protokolldaten der betroffenen Komponenten dokumentiert werden. Dabei SOLLTE die Vertraulichkeit bei der Dokumentation und Archivierung der Berichte gewährleistet sein. Die benötigten Informationen SOLLTEN in die jeweiligen Dokumentationssysteme eingepflegt werden, bevor die Störung als beendet und als abgeschlossen markiert wird. Im Vorfeld SOLLTEN mit dem oder der ISB die dafür erforderlichen Anforderungen an die Qualitätssicherung definiert werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A16",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 133,
+      "Name": "Nachbereitung von Sicherheitsvorfällen",
+      "Beschreibung": "Sicherheitsvorfälle SOLLTEN standardisiert nachbereitet werden. Dabei SOLLTE untersucht werden, wie schnell die Sicherheitsvorfälle erkannt und behoben wurden. Weiterhin SOLLTE untersucht werden, ob die Meldewege funktionierten, ausreichend Informationen für die Bewertung verfügbar waren und ob die Detektionsmaßnahmen wirksam waren. Ebenso SOLLTE geprüft werden, ob die ergriffenen Maßnahmen und Aktivitäten wirksam und effizient waren. Die Erfahrungen aus vergangenen Sicherheitsvorfällen SOLLTEN genutzt werden, um daraus Handlungsanweisungen für vergleichbare Sicherheitsvorfälle zu erstellen. Diese Handlungsanweisungen SOLLTEN den relevanten Personengruppen bekanntgegeben und auf Basis neuer Erkenntnisse regelmäßig aktualisiert werden. Die Institutionsleitung SOLLTE jährlich über die Sicherheitsvorfälle unterrichtet werden. Besteht sofortiger Handlungsbedarf, MUSS die Institutionsleitung umgehend informiert werden.",
+      "Verweis": "BSI OH SzA, DER.2.1.A17",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 134,
+      "Name": "Weiterentwicklung der Prozesse durch Erkenntnisse aus Sicherheitsvorfällen und Branchenentwicklungen [Fach-verantwortliche]",
+      "Beschreibung": "Nachdem ein Sicherheitsvorfall analysiert wurde, SOLLTE untersucht werden, ob die Prozesse und Abläufe im Rahmen der Behandlung von Sicherheitsvorfällen geändert oder weiterentwickelt werden müssen. Dabei SOLLTEN alle Personen, die an dem Vorfall beteiligt waren, über ihre jeweiligen Erfahrungen berichten. Es SOLLTE geprüft werden, ob es neue Entwicklungen im Bereich Incident Management und in der Forensik gibt und ob diese in die jeweiligen Dokumente und Abläufe eingebracht werden können. Werden Hilfsmittel und Checklisten eingesetzt, z. B. für Service-Desk-Mitarbeitende, SOLLTE geprüft werden, ob diese um relevante Fragen und Informationen zu erweitern sind.",
+      "Verweis": "BSI OH SzA, DER.2.1.A18",
+      "Umsetzungsgrad": "UG4"
+    },
+    {
+      "Anforderungsnummer": 135.1,
+      "Name": "Automatische Reaktion auf sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Bei einem SRE MÜSSEN die eingesetzten Detektionssysteme das Er-eignis automatisch melden und in Netzen, wo durch die automatische Reak-tion die kritische Dienstleistung nicht gefährdet wird, mit geeigneten Schutzmaßnahmen reagieren. In Netzen, wo die kritische Dienstleistung durch die Umsetzung nicht gefährdet wird, MUSS es möglich sein, automa-tisch in den Datenstrom einzugreifen, um einen möglichen Sicherheitsvor-fall zu unterbinden. Sollte eine automatische Reaktion nicht möglich sein, MUSS über manuelle Prozesse sichergestellt werden, dass der mögliche Si-cherheitsvorfall unterbunden wird.Der Ausschluss von Netzen oder Netzsegmenten von einer automatischen Reaktion, bzw. dem Eingriff in den Datenstrom MUSS schlüssig begründet sein.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 135.2,
+      "Name": "Automatische Reaktion auf sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Festgestellte Sicherheitsvorfälle im vermeintlichen Zusammenhang mit Angriffen MÜSSEN behandelt werden. Bei Störungen und Sicherheitsvor-fällen insbesondere im vermeintlichen Zusammenhang mit Angriffen MUSS überprüft werden, ob diese den Kriterien der Meldepflicht nach § 8b Absatz 3 BSIG bzw. §11 Absatz 1c EnWG entsprechen und eine Meldung an das BSI not-wendig ist oder ein Sicherheitsvorfall gemäß § 168 TKG vorliegt und dieser unverzüglich der BNetzA und dem BSI mitzuteilen ist. Darüber hinaus sind Anbieter von öffentlich zugänglichen TK-Diensten ge-mäß § 169 Absatz 1 TKG verpflichtet, im Falle einer Verletzung des Schutzes personenbezogener Daten, unverzüglich die BNetzA und den/die Bundesbe-auftragte für den Datenschutz und die Informationsfreiheit (BfDI) von der Verletzung zu benachrichtigen.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 135.3,
+      "Name": "Automatische Reaktion auf sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Die zur Angriffserkennung eingesetzten Systeme SOLLTEN automati-siert Maßnahmen zur Vermeidung und Beseitigung von angriffsbedingten Störungen ergreifen können, sofern das zu Grunde liegende SRE eindeutig qualifizierbar ist.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    },
+	{
+      "Anforderungsnummer": 135.4,
+      "Name": "Automatische Reaktion auf sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Dabei MUSS gewährleistet sein, dass ausschließlich automatisiert er-griffene Maßnahmen nicht zu einer relevanten Beeinträchtigung der kriti-schen Dienstleistung des Betreibers führen können.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 135.5,
+      "Name": "Automatische Reaktion auf sicherheitsrelevante Ereignisse",
+      "Beschreibung": "Die eingesetzten SzA SOLLTEN auch eine nicht-automatisierte Qualifizierung und Behandlung von Ereignissen unterstützen.",
+      "Verweis": "BSI OH SzA",
+      "Umsetzungsgrad": "UG4"
+    }
+  ],
+  "Maßnahmen für die Managementsysteme": [
+    {
+      "Anforderungsnummer": 1,
+      "Name": "Managementsystem für Informationssicherheit",
+      "Beschreibung": "Die Unternehmensleitung initiiert, steuert und überwacht ein Managementsystem zur Informationssicherheit (ISMS), das sich an etablierten Standards orientiert. Bei Anwendung der ISO 2700x-Reihe muss die Erklärung zur Anwendbarkeit (Statement of Applicability) die IT-Prozesse zu Entwicklung und Betrieb der kritischen Dienstleistung umfassen. Die hierzu eingesetzten Grundsätze, Verfahren und Maßnahmen ermöglichen eine nachvollziehbare Lenkung der folgenden Aufgaben und Aktivitäten zur dauerhaften Aufrechterhaltung der organisatorischen und technischen Vorkehrungen zur Vermeidung von Störungen der Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit der informationstechnischen Systeme, Komponenten und Prozesse zu Entwicklung und Betrieb der kritischen Dienstleistung und umfasst: e die Planung und Durchführung des Vorhabens, e Erfolgskontrolle bzw. Überwachung der Zielerreichung und e Beseitigung von erkannten Mängeln und Schwächen sowie kontinuierliche Verbesserung.",
+      "Verweis": "OIS-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 17,
+      "Name": "Verantwortung der gesetzlichen Vertreter des Betreibers der Kritischen Infrastruktur",
+      "Beschreibung": "Die gesetzlichen Vertreter des Betreibers der Kritischen Infrastruktur haben einen Prozessverantwortlichen (bspw. ein Mitglied der Unternehmensleitung) für Kontinuitäts- und Notfallmanagement benannt, der für die Etablierung der Prozesse und die Einhaltung der Leitlinien verantwortlich ist. Von dieser Verantwortung ist umfasst, dass ausreichende Ressourcen für einen geordneten Betrieb bereitgestellt werden. Personen in der Unternehmensleitung und anderen relevanten Führungspositionen demonstrieren Führung und Engagement in Bezug auf dieses Thema, indem sie beispielsweise die Mitarbeiter dazu auffordern beziehungsweise ermutigen, zu der Effektivität des Kontinuitäts- und Notfallmanagements aktiv beizutragen.",
+      "Verweis": "BCM-01",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 18.1,
+      "Name": "Planung der Betriebskontinuität",
+      "Beschreibung": "Basierend auf der Folgeabschätzung wird ein verbindliches Rahmenwerk zur Planung der Kontinuität der für die kritische Dienstleistung notwendigen IT-Systeme (einschließlich von Notfallplänen) eingeführt, dokumentiert und angewendet, das eine konsistente Vorgehensweise (z.B. an verschiedenen Standorten der Anlagen) sicherstellt. Diese Planung berücksichtigt etablierte Standards, die in einem 'Statement of Applicability' nachvollziehbar festgelegt sind. ",
+      "Verweis": "BCM-03",
+      "Umsetzungsgrad": "UG3"
+    },
+	{
+      "Anforderungsnummer": 18.2,
+      "Name": "Planung der Betriebskontinuität",
+      "Beschreibung": "Pläne zur Kontinuität der kritischen Dienstleistung berücksichtigen dabei folgende Aspekte: e Definierter Zweck und Umfang unter Beachtung der relevanten Abhängigkeiten e Zugänglichkeit und Verständlichkeit der Pläne für Personen, die danach handeln sollen e Eigentümerschaft durch mindestens eine benannte Person, die für die Überprüfung, Aktualisierung und Genehmigung zuständig ist e Festgelegte Kommunikationswege, Rollen und Verantwortlichkeiten e Wiederherstellungsverfahren, manuelle Übergangslösungen und Referenzinformationen (unter Berücksichtigung der Priorisierung bei der Wiederherstellung der kritischen Dienstleistung) e Methoden zur Inkraftsetzung der Pläne e Kontinuierlicher Verbesserungsprozess der Pläne e Schnittstellen zum Security Incident Management.",
+      "Verweis": "BCM-03",
+      "Umsetzungsgrad": "UG2"
+    },
+    {
+      "Anforderungsnummer": 19,
+      "Name": "Verifizierung, Aktualisierung und Test der Betriebskontinuität",
+      "Beschreibung": "Die Folgeabschätzung sowie die Pläne zur Kontinuität der kritischen Dienstleistung und Notfallpläne werden regelmäßig (mindestens jährlich) oder nach wesentlichen organisatorischen oder umgebungsbedingten Veränderungen überprüft, aktualisiert und getestet. Tests beziehen betroffene relevante Dritte (z. B. kritische Lieferanten) mit ein, z. B. in Form von: Internen Übungen und Systemtests, Übungen mit externen Partnern, insb. aus dem Kontext der kritischen Dienstleistung, Übungen im Rahmen des Notfallmanagements, Kommunikationstests, Planübungen, Krisenübungen, Training seltener Ereignisse. Die Tests werden dokumentiert und Ergebnisse werden für zukünftige Maßnahmen der Kontinuität der kritischen Dienstleistung berücksichtigt.",
+      "Verweis": "BCM-04",
+      "Umsetzungsgrad": "UG4"
+    }
+  ]
+}
+
