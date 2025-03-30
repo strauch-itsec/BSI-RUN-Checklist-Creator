@@ -27,3 +27,6 @@ Bei Fragen oder Anfragen kontaktieren Sie mich gerne auf LinkedIn.
 
 ## Autor
 Martin Strauch, Security Consult CGI Deutschland
+
+## Haftungsausschluss
+Dieses Projekt wird "wie es ist" bereitgestellt, ohne jegliche Garantie. Wir übernehmen keine Gewähr für die Sicherheit oder Funktionalität der Software. Nutzung auf eigene Gefahr.
