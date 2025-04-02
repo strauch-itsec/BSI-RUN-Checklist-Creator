@@ -171,7 +171,7 @@ def export_pdf():
         return send_file(pdf_path, as_attachment=True)
 
     except Exception as e:
-        return jsonify({"error": f"Fehler beim Exportieren: {str(e)}"}), 500
+        return jsonify({"error": f"Fehler beim Exportieren: PDF"}), 500
 
 # Word-Export Variante 1
 @app.route('/export/word_variante1', methods=['POST'])
@@ -182,12 +182,12 @@ def export_word_variante1():
             return jsonify({"error": "Keine Daten zum Exportieren"}), 400
 
         doc = create_word_document(filtered_data, full_description=False)
-        doc_path = "checkliste_variante1.docx"
+        doc_path = "/checkliste_variante1.docx"
         doc.save(doc_path)
         return send_file(doc_path, as_attachment=True)
 
     except Exception as e:
-        return jsonify({"error": f"Fehler beim Exportieren: {str(e)}"}), 500
+        return jsonify({"error": f"Fehler beim Exportieren: Word Variante 1"}), 500
 
 # Word-Export Variante 2
 @app.route('/export/word_variante2', methods=['POST'])
@@ -203,7 +203,7 @@ def export_word_variante2():
         return send_file(doc_path, as_attachment=True)
 
     except Exception as e:
-        return jsonify({"error": f"Fehler beim Exportieren: {str(e)}"}), 500
+        return jsonify({"error": f"Fehler beim Exportieren: Word Variante 2"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
