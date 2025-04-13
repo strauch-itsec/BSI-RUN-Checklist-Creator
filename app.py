@@ -182,7 +182,7 @@ def export_word_variante1():
             return jsonify({"error": "Keine Daten zum Exportieren"}), 400
 
         doc = create_word_document(filtered_data, full_description=False)
-        doc_path = "/checkliste_variante1.docx"
+        doc_path = "checkliste_variante1.docx"
         doc.save(doc_path)
         return send_file(doc_path, as_attachment=True)
 
