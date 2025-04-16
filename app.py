@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file, jsonify
+from flask import Flask, render_template, request, send_file, jsonify, after_this_request
 import json
 import os
 import pandas as pd
@@ -7,6 +7,10 @@ from docx import Document
 from docx.shared import Inches, Pt
 
 app = Flask(__name__)
+
+DOWNLOADS_DIR = "downloads"
+os.makedirs(DOWNLOADS_DIR, exist_ok=True)   # Ensure the downloads directory exists
+
 
 # JSON-Datei laden mit Fehlerbehandlung
 def load_json():
@@ -105,7 +109,13 @@ def create_word_document(filtered_data, full_description=False):
                 paragraph.add_run(f"\n{first_sentence}")
             row_cells[2].text = item['Umsetzungsgrad']
             row_cells[3].text = ""
-
+    # Add footer
+    section = doc.sections[-1]
+    footer = section.footer
+    footer_paragraph = footer.paragraphs[0]
+    footer_paragraph.text = "Erstellt mit https://github.com/strauch-itsec/BSI-RUN-Checklist-Creator                   Disclaimer: Es wird keine Gewähr für die Richtigkeit der Daten übernommen."
+    footer_paragraph.style.font.size = Pt(8)
+    
     return doc
 
 # PDF-Export mit validierter Eingabe
@@ -120,10 +130,19 @@ def export_pdf():
             def footer(self):
                 self.set_y(-15)
                 self.set_font('Arial', 'I', 8)
-                self.cell(0, 10, 'Erstellt auf Basis Anlage BSI RUN, Stand 2025', 0, 0, 'C')
+              #  self.cell(0, 10, 'Erstellt mit ', 0, 0, 'C')
+                
+                # Add clickable link
+                self.set_text_color(0, 0, 255)  # Blue color for the link
+                self.set_font('Arial', 'U', 8)  # Underline for the link
+                self.cell(0, 10, 'BSI-RUN-Checklist-Creator', 0, 0, 'C', link='https://github.com/strauch-itsec/BSI-RUN-Checklist-Creator')
+                
+                # Reset text color and underline
+                self.set_text_color(0, 0, 0)  # Reset text color to black
+                self.set_font('Arial', 'I', 8)  # Reset font to italic without underline
+                
                 self.ln(5)
                 self.cell(0, 10, 'Disclaimer: Es wird keine Gewähr für die Richtigkeit der Daten übernommen.', 0, 0, 'C')
-
         pdf = PDF(orientation="L", unit="mm", format="A4")  # Querformat
         pdf.add_page()
 
@@ -166,9 +185,19 @@ def export_pdf():
             pdf.cell(70, row_height, "", 1)  # Leeres Feld ohne Häkchen
             pdf.ln(row_height)
 
-        pdf_path = "checkliste.pdf"
+        pdf_path = os.path.join(DOWNLOADS_DIR, "checkliste.pdf")
         pdf.output(pdf_path)
+
+        @after_this_request
+        def cleanup(response):
+            try:
+                os.remove(pdf_path)
+            except Exception:
+                print(f"Error deleting file {pdf_path}")
+            return response
+
         return send_file(pdf_path, as_attachment=True)
+
 
     except Exception as e:
         return jsonify({"error": f"Fehler beim Exportieren: PDF"}), 500
@@ -182,8 +211,17 @@ def export_word_variante1():
             return jsonify({"error": "Keine Daten zum Exportieren"}), 400
 
         doc = create_word_document(filtered_data, full_description=False)
-        doc_path = "checkliste_variante1.docx"
+        doc_path = os.path.join(DOWNLOADS_DIR, "checkliste_variante1.docx")
         doc.save(doc_path)
+
+        @after_this_request
+        def cleanup(response):
+            try:
+                os.remove(doc_path)
+            except Exception:
+                print(f"Error deleting file {doc_path}")
+            return response
+
         return send_file(doc_path, as_attachment=True)
 
     except Exception as e:
@@ -198,10 +236,19 @@ def export_word_variante2():
             return jsonify({"error": "Keine Daten zum Exportieren"}), 400
 
         doc = create_word_document(filtered_data, full_description=True)
-        doc_path = "checkliste_variante2.docx"
+        doc_path = os.path.join(DOWNLOADS_DIR, "checkliste_variante2.docx")
         doc.save(doc_path)
-        return send_file(doc_path, as_attachment=True)
 
+        @after_this_request
+        def cleanup(response):
+            try:
+                os.remove(doc_path)
+            except Exception:
+                print(f"Error deleting file {doc_path}")
+            return response
+
+        return send_file(doc_path, as_attachment=True)
+    
     except Exception as e:
         return jsonify({"error": f"Fehler beim Exportieren: Word Variante 2"}), 500
 

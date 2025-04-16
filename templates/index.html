@@ -41,8 +41,8 @@
     </form>
     <p class="mt-3">
         <button id="exportPdf" class="btn btn-danger">Export als PDF</button>
-        <button id="exportWordVariante1" class="btn btn-success">Export als Word (Variante 1)</button>
-        <button id="exportWordVariante2" class="btn btn-success">Export als Word (Variante 2)</button>
+        <button id="exportWordVariante1" class="btn btn-success">Export als Word (Variante 1 - Beschreibung kurz)</button>
+        <button id="exportWordVariante2" class="btn btn-success">Export als Word (Variante 2 - Beschreibung vollständig)</button>
     </p>
 
     <h2 class="mt-4">Gefilterte Anforderungen</h2>
@@ -105,7 +105,7 @@
                 });
 
                 if (selectedRows.length === 0) {
-                    alert("Keine Daten zum Exportieren vorhanden.");
+                    alert("Keine Daten zum Exportieren vorhanden. Bitte zuerst filtern.");
                     return;
                 }
 
