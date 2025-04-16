@@ -25,6 +25,28 @@ def load_json():
         print(f"Fehler beim Laden der JSON-Datei: {e}")
         return {}
 
+def get_filtered_data():
+    """
+    Retrieves and filters data based on the selected category and grades stored in the session.
+    :return: A tuple (filtered_data, error_message). If no error, error_message will be None.
+    """
+    # Load data from the JSON file
+    data = load_json()
+
+    # Retrieve selected category and grades from the session
+    selected_category = session.get("selected_category", "Unknown")
+    selected_grades = session.get("selected_grades", [])
+    
+    # Validate session data
+    if selected_category == "Unknown" or selected_category not in data:
+        return None, "Ungültige Kategorie"
+    if not selected_grades:
+        return None, "Keine Umsetzungsgrade ausgewählt"
+
+    # Filter the data based on the selected category and grades
+    filtered_data = [req for req in data[selected_category] if req["Umsetzungsgrad"] in selected_grades]
+    return filtered_data, None        
+
 # Startseite mit Filtermöglichkeiten
 @app.route('/')
 def index():
@@ -136,15 +158,14 @@ def create_word_document(filtered_data, full_description=False):
 @app.route('/export/pdf', methods=['POST'])
 def export_pdf():
     try:
-        filtered_data = json.loads(request.form.get("data", "[]"))
+        # Get filtered data
+        filtered_data, error = get_filtered_data()
+        if error:
+            return jsonify({"error": error}), 400
+
+        # Retrieve session data for filename generation
         selected_category = session.get("selected_category", "Unknown").replace(" ", "-")
         selected_grades = session.get("selected_grades", [])
-
-    
-        if not isinstance(filtered_data, list) or not filtered_data:
-            return jsonify({"error": "Keine Daten zum Exportieren"}), 400
-
-        # Generate the filename dynamically
         grades_str = "-".join(selected_grades)
         filename = f"RUN-checklist-{selected_category}-{grades_str}.pdf"
 
@@ -228,15 +249,14 @@ def export_pdf():
 @app.route('/export/word_variante1', methods=['POST'])
 def export_word_variante1():
     try:
-        filtered_data = json.loads(request.form.get("data", "[]"))
+        # Get filtered data
+        filtered_data, error = get_filtered_data()
+        if error:
+            return jsonify({"error": error}), 400
+
+        # Retrieve session data for filename generation
         selected_category = session.get("selected_category", "Unknown").replace(" ", "-")
         selected_grades = session.get("selected_grades", [])
-
-    
-        if not isinstance(filtered_data, list) or not filtered_data:
-            return jsonify({"error": "Keine Daten zum Exportieren"}), 400
-
-        # Generate the filename dynamically
         grades_str = "-".join(selected_grades)
         filename = f"RUN-checklist-{selected_category}-{grades_str}-Variante1.docx"
 
@@ -261,13 +281,16 @@ def export_word_variante1():
 @app.route('/export/word_variante2', methods=['POST'])
 def export_word_variante2():
     try:
-        filtered_data = json.loads(request.form.get("data", "[]"))
+        # Get filtered data
+        filtered_data, error = get_filtered_data()
+        if error:
+            return jsonify({"error": error}), 400
+
+        # Retrieve session data for filename generation
         selected_category = session.get("selected_category", "Unknown").replace(" ", "-")
         selected_grades = session.get("selected_grades", [])
-
-    
-        if not isinstance(filtered_data, list) or not filtered_data:
-            return jsonify({"error": "Keine Daten zum Exportieren"}), 400
+        grades_str = "-".join(selected_grades)
+        filename = f"RUN-checklist-{selected_category}-{grades_str}-Variante2.docx"
 
         # Generate the filename dynamically
         grades_str = "-".join(selected_grades)
