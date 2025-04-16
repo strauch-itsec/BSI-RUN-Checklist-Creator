@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file, jsonify, after_this_request
+from flask import Flask, render_template, request, send_file, jsonify, after_this_request, session
 import json
 import os
 import pandas as pd
@@ -11,6 +11,7 @@ app = Flask(__name__)
 DOWNLOADS_DIR = "downloads"
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)   # Ensure the downloads directory exists
 
+app.secret_key ="jfoiajesfoiajoue243kjniofalmmr4"
 
 # JSON-Datei laden mit Fehlerbehandlung
 def load_json():
@@ -35,11 +36,24 @@ def index():
 @app.route('/filter', methods=['POST'])
 def filter_data():
     data = load_json()
+
+    # Define a whitelist for valid grades
+    valid_grades = {"UG2", "UG3", "UG4", "UG5"}
+    
     selected_grades = request.form.getlist("umsetzungsgrad")
     selected_category = request.form.get("category", "").strip()
 
+    # Validate the category
     if not selected_category or selected_category not in data:
         return jsonify({"error": "Ungültige Kategorie"}), 400
+
+    # Validate the grades against the whitelist
+    if not all(grade in valid_grades for grade in selected_grades):
+        return jsonify({"error": "Ungültige Umsetzungsgrade"}), 400
+
+    # Store selected values in the session
+    session['selected_category'] = selected_category
+    session['selected_grades'] = selected_grades    
 
     filtered = [req for req in data[selected_category] if req["Umsetzungsgrad"] in selected_grades]
     return jsonify(filtered)
@@ -123,8 +137,16 @@ def create_word_document(filtered_data, full_description=False):
 def export_pdf():
     try:
         filtered_data = json.loads(request.form.get("data", "[]"))
+        selected_category = session.get("selected_category", "Unknown").replace(" ", "-")
+        selected_grades = session.get("selected_grades", [])
+
+    
         if not isinstance(filtered_data, list) or not filtered_data:
             return jsonify({"error": "Keine Daten zum Exportieren"}), 400
+
+        # Generate the filename dynamically
+        grades_str = "-".join(selected_grades)
+        filename = f"RUN-checklist-{selected_category}-{grades_str}.pdf"
 
         class PDF(FPDF):
             def footer(self):
@@ -185,7 +207,7 @@ def export_pdf():
             pdf.cell(70, row_height, "", 1)  # Leeres Feld ohne Häkchen
             pdf.ln(row_height)
 
-        pdf_path = os.path.join(DOWNLOADS_DIR, "checkliste.pdf")
+        pdf_path = os.path.join(DOWNLOADS_DIR, filename)
         pdf.output(pdf_path)
 
         @after_this_request
@@ -207,11 +229,19 @@ def export_pdf():
 def export_word_variante1():
     try:
         filtered_data = json.loads(request.form.get("data", "[]"))
+        selected_category = session.get("selected_category", "Unknown").replace(" ", "-")
+        selected_grades = session.get("selected_grades", [])
+
+    
         if not isinstance(filtered_data, list) or not filtered_data:
             return jsonify({"error": "Keine Daten zum Exportieren"}), 400
 
+        # Generate the filename dynamically
+        grades_str = "-".join(selected_grades)
+        filename = f"RUN-checklist-{selected_category}-{grades_str}-Variante1.docx"
+
         doc = create_word_document(filtered_data, full_description=False)
-        doc_path = os.path.join(DOWNLOADS_DIR, "checkliste_variante1.docx")
+        doc_path = os.path.join(DOWNLOADS_DIR, filename)
         doc.save(doc_path)
 
         @after_this_request
@@ -232,11 +262,19 @@ def export_word_variante1():
 def export_word_variante2():
     try:
         filtered_data = json.loads(request.form.get("data", "[]"))
+        selected_category = session.get("selected_category", "Unknown").replace(" ", "-")
+        selected_grades = session.get("selected_grades", [])
+
+    
         if not isinstance(filtered_data, list) or not filtered_data:
             return jsonify({"error": "Keine Daten zum Exportieren"}), 400
 
+        # Generate the filename dynamically
+        grades_str = "-".join(selected_grades)
+        filename = f"RUN-checklist-{selected_category}-{grades_str}-Variante2.docx"
+
         doc = create_word_document(filtered_data, full_description=True)
-        doc_path = os.path.join(DOWNLOADS_DIR, "checkliste_variante2.docx")
+        doc_path = os.path.join(DOWNLOADS_DIR, filename)
         doc.save(doc_path)
 
         @after_this_request
