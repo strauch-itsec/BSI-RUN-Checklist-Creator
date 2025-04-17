@@ -10,7 +10,6 @@ app = Flask(__name__)
 
 DOWNLOADS_DIR = "downloads"
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)   # Ensure the downloads directory exists
-
 app.secret_key ="jfoiajesfoiajoue243kjniofalmmr4"
 
 # JSON-Datei laden mit Fehlerbehandlung
@@ -52,8 +51,10 @@ def get_filtered_data():
 def index():
     data = load_json()
     categories = list(data.keys()) if data else []  # Themenbereiche
-    return render_template("index.html", categories=categories)
-
+    max_items = sum(len(items) for items in data.values()) if data else 0
+    script_name = request.environ.get('SCRIPT_NAME', '')  # Get the SCRIPT_NAME
+    return render_template("index.html", categories=categories, max_items=max_items, script_name=script_name)
+    
 # Gefilterte Anforderungen anzeigen
 @app.route('/filter', methods=['POST'])
 def filter_data():
