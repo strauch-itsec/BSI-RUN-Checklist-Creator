@@ -9,6 +9,19 @@ Der BSI-RUN-Checklist-Creator ist ein Tool, das Betreibern kritischer Infrastruk
 - Sortieren und Organisieren der Anforderungen zur Erreichung der Reifegrade.
 - Verbesserung der Einhaltung von KRITIS-Anforderungen.
 
+## Beispiele
+Hier ist ein Screeshot der Anwendung:
+
+![Screenshot BSI-RUN-Checklist-Creator](examples/SzA-UG5.png)
+
+Beispiele der exportierten Formate finden Sie im [examples-Verzeichnis](examples/).
+
+## Live anschauen und nutzen
+
+Eine Implementierung der Anwendung ist unter:
+
+[https://strauch-itsec.de/BSI-RUN-Checklist-Creator/](https://strauch-itsec.de/BSI-RUN-Checklist-Creator/)
+
 ## Lizenz
 Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE)-Datei für Details.
 
