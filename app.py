@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 DOWNLOADS_DIR = "downloads"
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)   # Ensure the downloads directory exists
-app.secret_key ="jfoiajesfoiajoue243kjniofalmmr4"
+app.secret_key ="jfoiajesfoiajoue243kjniofalmmr4" 
 
 # JSON-Datei laden mit Fehlerbehandlung
 def load_json():
@@ -155,7 +155,17 @@ def create_word_document(filtered_data, full_description=False):
     
     return doc
 
-# PDF-Export mit validierter Eingabe
+class CustomPDF(FPDF):
+    def footer(self):
+        """Define a footer that appears on every page."""
+        self.set_y(-15)  # Position the footer 15 mm from the bottom
+        self.set_font("DejaVu", size=8)
+        self.set_text_color(0, 0, 255)
+        self.cell(0, 10, "BSI-RUN-Checklist-Creator", 0, 0, "C", link="https://github.com/strauch-itsec/BSI-RUN-Checklist-Creator")
+        self.set_text_color(0, 0, 0)
+        self.ln(5)
+        self.cell(0, 10, "Disclaimer: Es wird keine Gewähr für die Richtigkeit der Daten übernommen.", 0, 0, "C")
+
 @app.route('/export/pdf', methods=['POST'])
 def export_pdf():
     try:
@@ -170,65 +180,37 @@ def export_pdf():
         grades_str = "-".join(selected_grades)
         filename = f"RUN-checklist-{selected_category}-{grades_str}.pdf"
 
-        class PDF(FPDF):
-            def footer(self):
-                self.set_y(-15)
-                self.set_font('Arial', 'I', 8)
-              #  self.cell(0, 10, 'Erstellt mit ', 0, 0, 'C')
-                
-                # Add clickable link
-                self.set_text_color(0, 0, 255)  # Blue color for the link
-                self.set_font('Arial', 'U', 8)  # Underline for the link
-                self.cell(0, 10, 'BSI-RUN-Checklist-Creator', 0, 0, 'C', link='https://github.com/strauch-itsec/BSI-RUN-Checklist-Creator')
-                
-                # Reset text color and underline
-                self.set_text_color(0, 0, 0)  # Reset text color to black
-                self.set_font('Arial', 'I', 8)  # Reset font to italic without underline
-                
-                self.ln(5)
-                self.cell(0, 10, 'Disclaimer: Es wird keine Gewähr für die Richtigkeit der Daten übernommen.', 0, 0, 'C')
-        pdf = PDF(orientation="L", unit="mm", format="A4")  # Querformat
+        # Use CustomPDF for PDF generation
+        pdf = CustomPDF(orientation="L", unit="mm", format="A4")  # Landscape format
         pdf.add_page()
 
-        # Standard Arial-Schriftart für FPDF
-        pdf.set_font('Arial', size=12)
+        # Add a UTF-8 compatible font (e.g., DejaVu Sans)
+        font_path = os.path.join("fonts", "DejaVuSans.ttf")  # Ensure the font file is in the "fonts" folder
+        pdf.add_font("DejaVu", "", font_path, uni=True)
+        pdf.set_font("DejaVu", size=12)
+
         pdf.cell(0, 10, "Checkliste", ln=True, align="C")
         pdf.ln(10)
 
-        # Kopfzeile
+        # Header row
+        pdf.set_font("DejaVu", size=10)
         pdf.cell(30, 10, "Anforderungsnr.", 1)
-        pdf.cell(100, 10, "Name", 1)
-        pdf.cell(30, 10, "Umsetzungsgrad", 1)
-        pdf.cell(70, 10, "Status", 1)
+        pdf.cell(120, 10, "Name", 1)
+        pdf.cell(35, 10, "Umsetzungsgrad", 1)
+        pdf.cell(50, 10, "Status", 1)
         pdf.ln()
 
-        # Datenzeilen
+        # Data rows
         for item in filtered_data:
             name_text = item['Name']
-            lines = pdf.multi_cell(100, 10, name_text, border=0, split_only=True)
-            name_height = len(lines) * 10
-            row_height = max(10, name_height)
+            description = item['Beschreibung']
+            pdf.cell(30, 10, str(item['Anforderungsnummer']), 1)
+            pdf.cell(120, 10, name_text[:50] + ("..." if len(name_text) > 50 else ""), 1)
+            pdf.cell(35, 10, item['Umsetzungsgrad'], 1)
+            pdf.cell(50, 10, "", 1)  # Empty status field
+            pdf.ln()
 
-            if pdf.get_y() + row_height > pdf.page_break_trigger:
-                pdf.add_page()
-                pdf.cell(30, 10, "Anforderungsnr.", 1)
-                pdf.cell(100, 10, "Name", 1)
-                pdf.cell(30, 10, "Umsetzungsgrad", 1)
-                pdf.cell(70, 10, "Status", 1)
-                pdf.ln()
-
-            y_before = pdf.get_y()
-            pdf.cell(30, row_height, str(item['Anforderungsnummer']), 1)
-            x, y = pdf.get_x(), pdf.get_y()  # speichere aktuelle Position
-            pdf.multi_cell(100, 10, name_text, 1)
-            y_after = pdf.get_y()
-            row_height = y_after - y_before
-
-            pdf.set_xy(x + 100, y_before)  # setze X-Position nach Namensfeld, Y bleibt gleich
-            pdf.cell(30, row_height, item['Umsetzungsgrad'], 1)
-            pdf.cell(70, row_height, "", 1)  # Leeres Feld ohne Häkchen
-            pdf.ln(row_height)
-
+        # Save the PDF
         pdf_path = os.path.join(DOWNLOADS_DIR, filename)
         pdf.output(pdf_path)
 
@@ -242,10 +224,9 @@ def export_pdf():
 
         return send_file(pdf_path, as_attachment=True)
 
-
     except Exception as e:
-        return jsonify({"error": f"Fehler beim Exportieren: PDF"}), 500
-
+        return jsonify({"error": f"Fehler beim Exportieren: PDF "}), 500
+    
 # Word-Export Variante 1
 @app.route('/export/word_variante1', methods=['POST'])
 def export_word_variante1():
