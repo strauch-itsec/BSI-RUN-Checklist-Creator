@@ -10,7 +10,29 @@ app = Flask(__name__)
 
 DOWNLOADS_DIR = "downloads"
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)   # Ensure the downloads directory exists
-app.secret_key ="jfoiajesfoiajoue243kjniofalmmr4" 
+
+# Path to the secret key file
+SECRET_KEY_FILE = ".secret_key"
+
+def generate_secret_key():
+    """Generate a new secret key."""
+    return os.urandom(24)
+
+def load_or_create_secret_key():
+    """Load the secret key from a file or create a new one if it doesn't exist."""
+    if os.path.exists(SECRET_KEY_FILE):
+        # Load the existing secret key
+        with open(SECRET_KEY_FILE, "rb") as f:
+            return f.read()
+    else:
+        # Generate a new secret key
+        secret_key = generate_secret_key()
+        with open(SECRET_KEY_FILE, "wb") as f:
+            f.write(secret_key)
+        return secret_key
+
+# Set the secret key for the Flask app
+app.secret_key = load_or_create_secret_key()
 
 # JSON-Datei laden mit Fehlerbehandlung
 def load_json():

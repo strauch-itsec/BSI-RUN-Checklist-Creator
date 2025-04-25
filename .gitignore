@@ -1,2 +1,3 @@
 # Exclude Python bytecode cache directories
 __pycache__/
+.secret_key
